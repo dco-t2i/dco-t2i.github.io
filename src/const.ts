@@ -3,21 +3,21 @@ export const mainImage = { url: "/main.png" };
 export const slideImages = [
   { url: "/main.png" },
   { url: "/main.png" },
-  { url: "/cat1.png" },
+  { url: "/cat1.png" }
 ];
 
 export const subjectImages = [
   { url: "/dog1.png" },
   { url: "/dog2.png" },
   { url: "/dog3.png" },
-  { url: "/dog5.png" },
+  { url: "/dog5.png" }
 ];
 
 export const styleImages = [
   { url: "/wood.png" },
   { url: "/child.png" },
   { url: "/dog6.png" },
-  { url: "/dog8.png" },
+  { url: "/dog8.png" }
 ];
 
 export const hightlightImages = [{ url: "/wood.png" }, { url: "/child.png" }];
@@ -48,3 +48,5 @@ export const mySubjectMyStyle = `Personalization: By casting T2I diffusion model
 
 export const multiCompositional = `Personalization: By casting T2I diffusion model fine-tuning problem as a constrained policy optimization problem, we propose DCO loss which regularlizes the KL divergence with respect to the reference images.
   DCO loss does not require auxiliary dataset while preventing the model from catastorphic forgetting problem`;
+
+export const cmpWithPriorWorks = `DCO enables generating images with enhanced subject identity preservation and prompt alignment. For example, prior works fail to generate either <dog> or blueprint style while DCO maintains <dog> in blueprint style.`;

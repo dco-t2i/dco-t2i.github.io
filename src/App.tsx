@@ -10,6 +10,7 @@ import {
   highlightTexts,
   mySubjectMyStyle,
   oneShotPersonalization,
+  cmpWithPriorWorks,
   multiCompositional,
   hightlightImages,
   mainImage,
@@ -142,13 +143,17 @@ function App() {
 
         {/* FIXME: Comparison with other methods */}
         <TextBox
-          title={"Comparison with other methods"}
+          title={"Comparison with prior works"}
           backgroundColor={"white"}
           textColor={"black"}
           titleFontSize={"4xl"}
         >
-          <Markdown text={multiCompositional} />
-          <SlideImageBox images={slideImages} backgroundColor={"white"} />
+          <Markdown text={cmpWithPriorWorks} />
+          <OneImage
+            image={{
+              url: "/full_cmp.png"
+            }}
+          />
         </TextBox>
 
         {/* FIXME: Comparison with other methods */}
