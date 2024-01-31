@@ -29,7 +29,7 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
         style={{ backgroundColor: backgroundColor }}
       >
         <SimpleImageSlider
-          width={500}
+          width={1000}
           height={500}
           images={images}
           showBullets={images.length > 1}
@@ -37,6 +37,7 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
           onClick={handleClickImage}
           autoPlay={true}
           autoPlayDelay={3}
+          bgColor="white"
         />
       </div>
       {open && <ImageModal imgUrl={images[imageIdx!].url} setOpen={setOpen} />}

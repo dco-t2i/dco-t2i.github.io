@@ -32,7 +32,7 @@ const ImageList = ({
         <img
           className={`${
             subject ? "my-2" : "mx-2"
-          } hover:scale-105 cursor-pointer border border-solid ${
+          } hover:scale-105 cursor-pointer border-3 border-solid ${
             selected === image.url
               ? "scale-105 opacity-100"
               : "opacity-50 hover:opacity-90"
@@ -44,7 +44,7 @@ const ImageList = ({
           height={100}
           style={
             selected === image.url
-              ? { borderColor: "red" }
+              ? { borderColor: subject ? "#34a853" : "#ea4335" }
               : { borderColor: borderColor }
           }
           id={image.url}
