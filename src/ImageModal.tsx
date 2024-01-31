@@ -3,10 +3,10 @@ import {
   MouseEventHandler,
   SetStateAction,
   useCallback,
-  useContext,
+  // useContext,
   useEffect,
 } from "react";
-import { WindowSizeContext } from "./contexts/WindowSizeContext";
+// import { WindowSizeContext } from "./contexts/WindowSizeContext";
 
 interface Props {
   imgUrl: string;
@@ -14,7 +14,7 @@ interface Props {
 }
 
 const ImageModal = ({ imgUrl, setOpen }: Props) => {
-  const { windowWidth, windowHeight } = useContext(WindowSizeContext);
+  // const { windowWidth, windowHeight } = useContext(WindowSizeContext);
   const texture = new Image();
   texture.src = imgUrl;
 
@@ -49,7 +49,7 @@ const ImageModal = ({ imgUrl, setOpen }: Props) => {
   const handleClickBackground: MouseEventHandler<HTMLDivElement> = (e) => {
     e.stopPropagation();
     e.preventDefault();
-    
+
     setOpen((prev) => !prev);
   };
 
@@ -58,20 +58,7 @@ const ImageModal = ({ imgUrl, setOpen }: Props) => {
       className="flex justify-center items-center fixed top-0 left-0 w-screen h-screen bg-black/50 z-10"
       onClick={handleClickBackground}
     >
-      <img
-        src={texture.src}
-        alt={imgUrl}
-        width={Math.min(
-          Math.max(windowWidth * 0.5, windowHeight * 0.7, 800),
-          windowWidth * 0.8,
-          windowHeight * 0.8
-        )}
-        height={Math.min(
-          Math.max(windowWidth * 0.5, windowHeight * 0.7, 800),
-          windowWidth * 0.8,
-          windowHeight * 0.8
-        )}
-      />
+      <img src={texture.src} alt={imgUrl} width={1200} />
     </div>
   );
 };
