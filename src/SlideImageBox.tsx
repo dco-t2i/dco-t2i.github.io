@@ -1,6 +1,8 @@
 import { useState } from "react";
 import SimpleImageSlider from "react-simple-image-slider";
 import ImageModal from "./ImageModal";
+import LeftArrowSvg from "./svgs/LeftArrowSvg";
+import RightArrowSvg from "./svgs/RightArrowSvg";
 
 interface Props {
   images: { url: string }[];
@@ -25,15 +27,21 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
   return (
     <>
       <div
-        className="flex justify-center items-center"
+        className="flex justify-center items-center relative"
         style={{ backgroundColor: backgroundColor }}
       >
+        <div className="absolute top-[1/2-29px] -left-38px bg-gray z-10 w-[38px] h-[58px] cursor-pointer flex flex-col justify-center items-center rounded-l-md">
+          <LeftArrowSvg />
+        </div>
+        <div className="absolute top-[1/2-29px] -right-38px bg-gray z-10 w-[58px] h-[58px] cursor-pointer flex flex-col justify-center items-center rounded-r-md">
+          <RightArrowSvg />
+        </div>
         <SimpleImageSlider
           width={1000}
           height={500}
           images={images}
-          showBullets={images.length > 1}
-          showNavs={images.length > 1}
+          showBullets={false}
+          showNavs={false}
           onClick={handleClickImage}
           autoPlay={true}
           autoPlayDelay={3}

@@ -5,16 +5,21 @@ import SubjectStyleImageBox from "./SubjectStyleImageBox";
 import TopImageBox from "./TopImageBox";
 import Markdown from "./Markdown";
 import {
+  tldr,
   abstract,
   highlightTexts,
+  mySubjectMyStyle,
+  oneShotPersonalization,
+  multiCompositional,
   hightlightImages,
   mainImage,
   slideImages,
   styleImages,
-  subjectImages,
+  subjectImages
 } from "./const";
 import HighlightBox from "./HighlightBox";
 import OneImage from "./OneImage";
+import Organization from "./Organization";
 
 function App() {
   return (
@@ -26,7 +31,7 @@ function App() {
         {/* FIXME: Title, Author */}
         <TextBox
           title={
-            <div>
+            <div className="text-5xl">
               Direct Consistency Optimization for
               <br />
               Compositional Text-to-Image Personalization
@@ -34,74 +39,134 @@ function App() {
           }
           backgroundColor={"white"}
           textColor={"black"}
-        ></TextBox>
+          titleFontSize={"5xl"}
+        >
+          <Organization />
+        </TextBox>
 
         {/* FIXME: TL;DR */}
-        <TextBox title={"TL;DR"} backgroundColor={"gray"} textColor={"white"}>
+        <TextBox
+          title={`TL;DR: ${tldr}`}
+          backgroundColor={"gray"}
+          textColor={"white"}
+          titleFontSize={"3xl"}
+        ></TextBox>
+
+        {/* Section1 */}
+        {/* FIXME: Abstract */}
+        <TextBox
+          title={"Abstract"}
+          backgroundColor={"white"}
+          textColor={"black"}
+          titleFontSize={"4xl"}
+        >
           <Markdown text={abstract} />
           <OneImage image={mainImage} />
         </TextBox>
 
+        {/* Section2 */}
         {/* FIXME: Main figures */}
-        <SlideImageBox images={slideImages} backgroundColor={"white"} />
-
-        {/* FIXME: Abstract */}
-        <TextBox title={"TL;DR"} backgroundColor={"gray"} textColor={"white"}>
-          <Markdown text={abstract} />
-        </TextBox>
-
-        {/* FIXME: How does it work? */}
-        <HighlightBox
-          leftImage={hightlightImages[0]}
-          rightImage={hightlightImages[1]}
-          leftText={highlightTexts[0]}
-          rightText={highlightTexts[1]}
-          backgroundColor={"white"}
-        />
-
-        {/* FIXME: Quantitative Results */}
+        {/* subject personalization */}
         <TextBox
-          title={"Abstract"}
+          title={"Subject Personalization"}
           backgroundColor={"gray"}
           textColor={"white"}
+          titleFontSize={"4xl"}
         >
-          <Markdown text={abstract} />
+          <SlideImageBox images={slideImages} backgroundColor={"gray"} />
+        </TextBox>
+        <div className="border-b border-white h-1"></div>
+        {/* style personalization */}
+        <TextBox
+          title={"Style Personalization"}
+          backgroundColor={"gray"}
+          textColor={"white"}
+          titleFontSize={"4xl"}
+        >
+          <SlideImageBox images={slideImages} backgroundColor={"gray"} />
+        </TextBox>
+
+        {/* Section3 */}
+        {/* FIXME: How does it work? */}
+        <TextBox
+          title={"How does it work?"}
+          backgroundColor={"white"}
+          textColor={"black"}
+          titleFontSize={"4xl"}
+        >
+          <HighlightBox
+            leftImage={hightlightImages[0]}
+            rightImage={hightlightImages[1]}
+            leftText={highlightTexts[0]}
+            rightText={highlightTexts[1]}
+            backgroundColor={"white"}
+          />
+        </TextBox>
+
+        {/* Section4 */}
+        {/* FIXME: 1-shot personalization */}
+        <TextBox
+          title={"1 shot Personalization"}
+          backgroundColor={"gray"}
+          textColor={"white"}
+          titleFontSize={"4xl"}
+        >
+          <Markdown text={oneShotPersonalization} />
         </TextBox>
 
         {/* FIXME: My style My object */}
-        <SubjectStyleImageBox
-          subjectImages={subjectImages}
-          styleImages={styleImages}
-          backgroundColor={"white"}
-        />
-
-        {/* FIXME: 1-shot personalization */}
         <TextBox
-          title={"Personalized Text-to-image Generation from a Singel Image"}
-          backgroundColor={"gray"}
-          textColor={"white"}
+          title={"My Subject, My Style"}
+          backgroundColor={"white"}
+          textColor={"black"}
+          titleFontSize={"4xl"}
         >
-          DCO generates high-quality novel images from text prompts in any
-          background, style and etc by a single referecne images.
+          <Markdown text={mySubjectMyStyle} />
+          <SubjectStyleImageBox
+            subjectImages={subjectImages}
+            styleImages={styleImages}
+            backgroundColor={"white"}
+          />
         </TextBox>
 
         {/* FIXME: Multiple Compositional */}
         <TextBox
-          title={"Effect of Comprehensive Captioning"}
+          title={"Multi-compositional Image Generation"}
           backgroundColor={"gray"}
           textColor={"white"}
+          titleFontSize={"4xl"}
         >
-          Comprehensive Captioning in model personalization enables to better
-          disentangle desirable componenets within the image. For example, "a
-          dog in the yellow background" helps to disentangle background
-          knowledge from the reference image and induce to implant only a dog
-          feature into the model.
+          <Markdown text={multiCompositional} />
+          <SlideImageBox images={slideImages} backgroundColor={"gray"} />
+        </TextBox>
+
+        {/* FIXME: Comparison with other methods */}
+        <TextBox
+          title={"Comparison with other methods"}
+          backgroundColor={"white"}
+          textColor={"black"}
+          titleFontSize={"4xl"}
+        >
+          <Markdown text={multiCompositional} />
+          <SlideImageBox images={slideImages} backgroundColor={"white"} />
+        </TextBox>
+
+        {/* FIXME: Comparison with other methods */}
+        <TextBox
+          title={"Quantitative Results"}
+          backgroundColor={"gray"}
+          textColor={"white"}
+          titleFontSize={"4xl"}
+        >
+          <Markdown text={multiCompositional} />
+          <SlideImageBox images={slideImages} backgroundColor={"gray"} />
         </TextBox>
 
         <TextBox
           title={"Acknowledgements"}
           backgroundColor={"white"}
           textColor={"black"}
+          titleFontSize={"4xl"}
         >
           This template was originally borrowed from xxx.
         </TextBox>
