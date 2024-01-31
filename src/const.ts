@@ -1,32 +1,34 @@
 export const mainImage = { url: "/main.png" };
 
+export const represents = ["/main.png", "/main.png", "main.png", "main.png"];
+
 export const slideImages = [
   { url: "/main.png" },
   { url: "/main.png" },
-  { url: "/cat1.png" }
+  { url: "/main.png" }
 ];
 
 export const subjectImages = [
-  { url: "/dog1.png" },
-  { url: "/dog2.png" },
-  { url: "/dog3.png" },
-  { url: "/dog2.png" },
-  { url: "/dog3.png" },
-  { url: "/dog5.png" }
+  { url: "/msms/subject1.png" },
+  { url: "/msms/subject2.png" },
+  { url: "/msms/subject3.png" },
+  { url: "/msms/subject4.png" },
+  { url: "/msms/subject5.png" },
+  { url: "/msms/subject6.png" }
 ];
 
 export const styleImages = [
-  { url: "/wood.png" },
-  { url: "/child.png" },
-  { url: "/dog6.png" },
-  { url: "/child.png" },
-  { url: "/dog6.png" },
-  { url: "/dog8.png" }
+  { url: "/msms/style1.png" },
+  { url: "/msms/style2.png" },
+  { url: "/msms/style3.png" },
+  { url: "/msms/style4.png" },
+  { url: "/msms/style5.png" },
+  { url: "/msms/style6.png" }
 ];
 
-export const hightlightImages = [{ url: "/wood.png" }, { url: "/child.png" }];
+export const hightlightImages = [{ url: "/main.png" }, { url: "/main.png" }];
 
-export const tldr = `Direct Consistency Optimization (DCO) enables generating enhanced compositionality with controllable sampling method.`;
+export const tldr = `Direct Consistency Optimization (DCO) enables generating enhanced compositional images with controllable sampling method.`;
 
 export const abstract = `Text-to-image (T2I) diffusion models, when fine-tuned on few personal images, are able to generate visuals with high degree of consistency. 
   However, they still lacks in synthesizing images of different scenario or styles that are possible in the original pretrained models. 
@@ -44,8 +46,7 @@ export const highlightTexts = [
   `Reward Guidance: To contorl the tradeoff between image fidelity and prompt fidelity, reward guidance adds the amount of change from pretraiend distribution by controling with guidance scale.`
 ];
 
-export const oneShotPersonalization = `DCO generates high-quality novel images from text prompts in any
-background, style and etc with only a single referecne image.`;
+export const oneShotPersonalization = `DCO generates high-quality novel images from text prompts in any background, style and etc with only a single referecne image.`;
 
 export const mySubjectMyStyle = `Personalization: By casting T2I diffusion model fine-tuning problem as a constrained policy optimization problem, we propose DCO loss which regularlizes the KL divergence with respect to the reference images.
   DCO loss does not require auxiliary dataset while preventing the model from catastorphic forgetting problem.`;

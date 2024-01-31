@@ -1,12 +1,11 @@
 import { MouseEventHandler, useEffect, useState } from "react";
+import { represents } from "./const";
 
 interface Props {
   title?: string;
   backgroundColor: string;
   textColor: string;
 }
-
-const represents = ["/dog1.png", "/dog2.png", "dog5.png", "cat1.png"];
 
 const TopImageBox = ({ title, backgroundColor, textColor }: Props) => {
   const [rotation, setRotation] = useState(0);
@@ -17,12 +16,12 @@ const TopImageBox = ({ title, backgroundColor, textColor }: Props) => {
   useEffect(() => {
     let delay: number;
     const intervalRotation = window.setInterval(() => {
-      setRotation((prevRotation) => (prevRotation + 180) % 360);
+      setRotation(prevRotation => (prevRotation + 180) % 360);
     }, 3000);
 
     const intervalSequence = window.setInterval(() => {
       delay = window.setTimeout(() => {
-        setSequence((prev) => (prev + 1) % represents.length);
+        setSequence(prev => (prev + 1) % represents.length);
       }, 500);
     }, 3000);
 
@@ -41,17 +40,17 @@ const TopImageBox = ({ title, backgroundColor, textColor }: Props) => {
 
   const rotationStyle = {
     transform: `rotateY(${rotation}deg)`,
-    transition: "transform 1.0s ease-in-out",
+    transition: "transform 1.0s ease-in-out"
   };
 
   const handleClickImg: MouseEventHandler<HTMLImageElement> = () => {
-    setReset((prev) => !prev);
+    setReset(prev => !prev);
 
     manualDelay = window.setTimeout(() => {
-      setSequence((prev) => (prev + 1) % represents.length);
+      setSequence(prev => (prev + 1) % represents.length);
     }, 500);
 
-    setRotation((prevRotation) => (prevRotation + 180) % 360);
+    setRotation(prevRotation => (prevRotation + 180) % 360);
   };
 
   return (

@@ -10,7 +10,7 @@ interface Props {
 }
 
 const parseUrl2Name = (url: string) => {
-  return url.split("/")[1].split(".")[0];
+  return url.split("/")[2].split(".")[0];
 };
 
 const SubjectStyleImageBox = ({
@@ -24,11 +24,13 @@ const SubjectStyleImageBox = ({
   const [style, setStyle] = useState(styleImages[0].url);
 
   const [composedImg, setComposedImg] = useState<string>(
-    `/${parseUrl2Name(style)}/${parseUrl2Name(subject)}.png`
+    `/msms/${parseUrl2Name(subject)}/${parseUrl2Name(style)}.png`
   );
 
   useEffect(() => {
-    setComposedImg(`/${parseUrl2Name(style)}/${parseUrl2Name(subject)}.png`);
+    setComposedImg(
+      `/msms/${parseUrl2Name(subject)}/${parseUrl2Name(style)}.png`
+    );
   }, [subject, style, styleImages, subjectImages]);
 
   return (
