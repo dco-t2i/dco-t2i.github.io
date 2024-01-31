@@ -1,0 +1,14 @@
+// .eslintrc 파일
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true,
+  "rules": {
+    // 프로젝트별 적용할 Rules
+    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "no-nested-ternary": ["off"],
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "eslint-disable-next-line react-hooks/exhaustive-deps": ["off"]
+  }
+}
