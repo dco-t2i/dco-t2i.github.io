@@ -13,9 +13,9 @@ const ImageList = ({
   selected,
   setSelected,
   borderColor,
-  subject,
+  subject
 }: Props) => {
-  const handleClickImg: MouseEventHandler<HTMLImageElement> = (e) => {
+  const handleClickImg: MouseEventHandler<HTMLImageElement> = e => {
     e.preventDefault();
     e.stopPropagation();
     const target = e.target as HTMLImageElement;
@@ -25,10 +25,10 @@ const ImageList = ({
   return (
     <div
       className={`flex ${
-        subject ? "w-[500px] pl-4" : "flex-col h-[500px] pt-4"
-      } ${images.length === 4 ? "justify-between" : "justify-evenly"}`}
+        subject ? "w-[700px] pl-4" : "flex-col h-[700px] pt-4"
+      } ${images.length === 6 ? "justify-between" : "justify-evenly"}`}
     >
-      {images.map((image) => (
+      {images.map(image => (
         <img
           className={`${
             subject ? "my-2" : "mx-2"

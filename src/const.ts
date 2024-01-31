@@ -10,11 +10,15 @@ export const subjectImages = [
   { url: "/dog1.png" },
   { url: "/dog2.png" },
   { url: "/dog3.png" },
+  { url: "/dog2.png" },
+  { url: "/dog3.png" },
   { url: "/dog5.png" }
 ];
 
 export const styleImages = [
   { url: "/wood.png" },
+  { url: "/child.png" },
+  { url: "/dog6.png" },
   { url: "/child.png" },
   { url: "/dog6.png" },
   { url: "/dog8.png" }

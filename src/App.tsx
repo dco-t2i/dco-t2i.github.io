@@ -59,7 +59,6 @@ function App() {
           title={"Abstract"}
           backgroundColor={"white"}
           textColor={"black"}
-          titleFontSize={"4xl"}
         >
           <Markdown text={abstract} />
           <OneImage image={mainImage} />
@@ -72,7 +71,6 @@ function App() {
           title={"Subject Personalization"}
           backgroundColor={"gray"}
           textColor={"white"}
-          titleFontSize={"4xl"}
         >
           <SlideImageBox images={slideImages} backgroundColor={"gray"} />
         </TextBox>
@@ -82,7 +80,6 @@ function App() {
           title={"Style Personalization"}
           backgroundColor={"gray"}
           textColor={"white"}
-          titleFontSize={"4xl"}
         >
           <SlideImageBox images={slideImages} backgroundColor={"gray"} />
         </TextBox>
@@ -93,7 +90,6 @@ function App() {
           title={"How does it work?"}
           backgroundColor={"white"}
           textColor={"black"}
-          titleFontSize={"4xl"}
         >
           <HighlightBox
             leftImage={hightlightImages[0]}
@@ -110,7 +106,6 @@ function App() {
           title={"1 shot Personalization"}
           backgroundColor={"gray"}
           textColor={"white"}
-          titleFontSize={"4xl"}
         >
           <Markdown text={oneShotPersonalization} />
         </TextBox>
@@ -120,7 +115,6 @@ function App() {
           title={"My Subject, My Style"}
           backgroundColor={"white"}
           textColor={"black"}
-          titleFontSize={"4xl"}
         >
           <Markdown text={mySubjectMyStyle} />
           <SubjectStyleImageBox
@@ -135,7 +129,6 @@ function App() {
           title={"Multi-compositional Image Generation"}
           backgroundColor={"gray"}
           textColor={"white"}
-          titleFontSize={"4xl"}
         >
           <Markdown text={multiCompositional} />
           <SlideImageBox images={slideImages} backgroundColor={"gray"} />
@@ -146,7 +139,6 @@ function App() {
           title={"Comparison with prior works"}
           backgroundColor={"white"}
           textColor={"black"}
-          titleFontSize={"4xl"}
         >
           <Markdown text={cmpWithPriorWorks} />
           <OneImage
@@ -161,7 +153,6 @@ function App() {
           title={"Quantitative Results"}
           backgroundColor={"gray"}
           textColor={"white"}
-          titleFontSize={"4xl"}
         >
           <Markdown text={multiCompositional} />
           <SlideImageBox images={slideImages} backgroundColor={"gray"} />
@@ -171,7 +162,6 @@ function App() {
           title={"Acknowledgements"}
           backgroundColor={"white"}
           textColor={"black"}
-          titleFontSize={"4xl"}
         >
           This template was originally borrowed from xxx.
         </TextBox>

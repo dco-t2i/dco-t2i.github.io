@@ -18,7 +18,7 @@ const SubjectStyleImageBox = ({
   subjectImages,
   styleImages,
   backgroundColor,
-  textColor,
+  textColor
 }: Props) => {
   const [subject, setSubject] = useState(subjectImages[0].url);
   const [style, setStyle] = useState(styleImages[0].url);
@@ -44,7 +44,7 @@ const SubjectStyleImageBox = ({
       </div>
       <div className="flex flex-col m-0 px-28 py-14">
         <div className="flex">
-          <div className="mx-2 w-[100px]"></div>
+          <div className="mx-2 w-[106px]"></div>
           <div>
             <ImageList
               images={subjectImages}
@@ -66,7 +66,7 @@ const SubjectStyleImageBox = ({
             />
           </div>
           <div className="pt-4 pl-4">
-            <img alt={composedImg} src={composedImg} width={500} height={500} />
+            <img alt={composedImg} src={composedImg} width={700} height={700} />
           </div>
         </div>
       </div>
