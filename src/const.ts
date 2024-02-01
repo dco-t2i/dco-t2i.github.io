@@ -1,12 +1,11 @@
 export const bgColor = `#0065a2`;
 
 export const subjectImages = [
-  { url: "/style/0.png" },
-  { url: "/style/1.png" },
-  { url: "/style/2.png" },
-  { url: "/style/3.png" },
-  { url: "/style/4.png" },
-  { url: "/style/5.png" }
+  { url: "/subject/0.png" },
+  { url: "/subject/1.png" },
+  { url: "/subject/2.png" },
+  { url: "/subject/3.png" },
+  { url: "/subject/4.png" }
 ];
 
 export const styleImages = [
