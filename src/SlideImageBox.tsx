@@ -37,7 +37,6 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
           // onClick={handleClickImage}
           autoPlay={true}
           autoPlayDelay={3}
-          bgColor="white"
         />
       </div>
       {/* {open && <ImageModal imgUrl={images[imageIdx!].url} setOpen={setOpen} />} */}

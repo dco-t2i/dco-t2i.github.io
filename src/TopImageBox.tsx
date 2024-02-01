@@ -62,6 +62,7 @@ const TopImageBox = ({ title, backgroundColor, textColor }: Props) => {
         {title}
       </div>
       <img
+        loading="lazy"
         onClick={handleClickImg}
         src={represents[sequence]}
         alt="representation"

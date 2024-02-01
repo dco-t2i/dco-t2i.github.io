@@ -16,11 +16,11 @@ const HighlightBox = ({
   rightImage,
   leftText,
   rightText,
-  backgroundColor,
+  backgroundColor
 }: Props) => {
   const [highlight, setHighlight] = useState(0);
 
-  const handleEnter: MouseEventHandler<HTMLElement> = (e) => {
+  const handleEnter: MouseEventHandler<HTMLElement> = e => {
     const target = e.target as HTMLElement;
     setHighlight(Number(target.dataset.value));
   };
@@ -41,6 +41,7 @@ const HighlightBox = ({
       <div className="flex flex-col">
         <div className="flex justify-center">
           <img
+            loading="lazy"
             data-value={1}
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
@@ -53,6 +54,7 @@ const HighlightBox = ({
             height={300}
           />
           <img
+            loading="lazy"
             data-value={2}
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}

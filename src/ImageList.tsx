@@ -36,6 +36,7 @@ const ImageList = ({
       </div>
       {images.map(image => (
         <img
+          loading="lazy"
           className={`my-2 hover:scale-105 cursor-pointer border-3 border-solid ${
             selected === image.url
               ? "scale-105 opacity-100"

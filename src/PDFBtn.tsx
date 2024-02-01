@@ -1,4 +1,5 @@
 import { MouseEventHandler } from "react";
+import PDFSvg from "./svgs/PDFSvg";
 
 interface Props {
   placeholder: string;
@@ -6,15 +7,16 @@ interface Props {
 
 const PDFBtn = ({ placeholder }: Props) => {
   const handleClickArxiv: MouseEventHandler<HTMLButtonElement> = () => {
-    window.open("https://www.naver.com/");
+    // window.open("https://www.naver.com/");
+    window.open("/Howls moving_Edit - Flute 1.pdf");
   };
 
   return (
     <button
-      className="rounded-3xl flex items-center px-3 py-1 border border-solid border-gray-400 bg-gray-400 text-white mt-4 cursor-pointer"
+      className="rounded-3xl flex items-center px-3 py-1 border border-solid border-gray-600 bg-gray-600 text-white mt-4 cursor-pointer"
       onClick={handleClickArxiv}
     >
-      <img src={"./pdf.png"} className="max-w-[30px]" />
+      <PDFSvg />
       <div>{placeholder}</div>
     </button>
   );

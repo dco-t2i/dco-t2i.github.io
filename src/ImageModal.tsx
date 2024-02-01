@@ -4,7 +4,7 @@ import {
   SetStateAction,
   useCallback,
   // useContext,
-  useEffect,
+  useEffect
 } from "react";
 // import { WindowSizeContext } from "./contexts/WindowSizeContext";
 
@@ -46,11 +46,11 @@ const ImageModal = ({ imgUrl, setOpen }: Props) => {
     };
   }, []);
 
-  const handleClickBackground: MouseEventHandler<HTMLDivElement> = (e) => {
+  const handleClickBackground: MouseEventHandler<HTMLDivElement> = e => {
     e.stopPropagation();
     e.preventDefault();
 
-    setOpen((prev) => !prev);
+    setOpen(prev => !prev);
   };
 
   return (
@@ -58,7 +58,7 @@ const ImageModal = ({ imgUrl, setOpen }: Props) => {
       className="flex justify-center items-center fixed top-0 left-0 w-screen h-screen bg-black/50 z-10"
       onClick={handleClickBackground}
     >
-      <img src={texture.src} alt={imgUrl} width={1200} />
+      <img loading="lazy" src={texture.src} alt={imgUrl} width={1200} />
     </div>
   );
 };

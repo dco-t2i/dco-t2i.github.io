@@ -84,6 +84,7 @@ const SubjectStyleImageBox = ({
           <div className="flex">
             <div className="pl-4">
               <img
+                loading="lazy"
                 alt={composedImg}
                 src={composedImg}
                 width={1000}
