@@ -8,7 +8,7 @@ interface Props {
 const PDFBtn = ({ placeholder }: Props) => {
   const handleClickArxiv: MouseEventHandler<HTMLButtonElement> = () => {
     // window.open("https://www.naver.com/");
-    window.open("/Howls moving_Edit - Flute 1.pdf");
+    window.open("/pdf_file_name.pdf");
   };
 
   return (

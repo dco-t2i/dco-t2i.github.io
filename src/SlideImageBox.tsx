@@ -1,6 +1,11 @@
-// import { useState } from "react";
-import SimpleImageSlider from "react-simple-image-slider";
-// import ImageModal from "./ImageModal";
+import { Navigation, Pagination } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 interface Props {
   images: { url: string }[];
@@ -8,38 +13,26 @@ interface Props {
 }
 
 const SlideImageBox = ({ images, backgroundColor }: Props) => {
-  // const [open, setOpen] = useState(false);
-  // const [imageIdx, setImageIdx] = useState<number | undefined>();
-
-  // const handleClickImage = (
-  //   idx: number,
-  //   event: React.SyntheticEvent<Element, Event>
-  // ): void => {
-  //   event.preventDefault();
-  //   event.stopPropagation();
-
-  //   setOpen(true);
-  //   setImageIdx(idx);
-  // };
-
   return (
     <>
       <div
         className="flex justify-center items-center relative pt-10px"
         style={{ backgroundColor: backgroundColor }}
       >
-        <SimpleImageSlider
-          width={1500}
-          height={770}
-          images={images}
-          showBullets={images.length > 1}
-          showNavs={images.length > 1}
-          // onClick={handleClickImage}
-          autoPlay={true}
-          autoPlayDelay={3}
-        />
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+        >
+          {images.map(image => (
+            <SwiperSlide key={image.url}>
+              <img loading="lazy" src={image.url} width={1500} height={770} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      {/* {open && <ImageModal imgUrl={images[imageIdx!].url} setOpen={setOpen} />} */}
     </>
   );
 };
