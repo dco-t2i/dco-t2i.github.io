@@ -5,7 +5,7 @@ interface Props {
   selected: string;
   setSelected: Dispatch<SetStateAction<string>>;
   borderColor: string;
-  subject: boolean;
+  type: "subject" | "style" | "action";
 }
 
 const ImageList = ({
@@ -13,7 +13,7 @@ const ImageList = ({
   selected,
   setSelected,
   borderColor,
-  subject
+  type
 }: Props) => {
   const handleClickImg: MouseEventHandler<HTMLImageElement> = e => {
     e.preventDefault();
@@ -24,19 +24,30 @@ const ImageList = ({
 
   return (
     <div
-      className={`flex ${
-        subject ? "w-[700px] pl-4" : "flex-col h-[700px] pt-4"
-      } ${images.length === 6 ? "justify-between" : "justify-evenly"}`}
+      className={`relative flex w-[700px] pl-4 ${
+        images.length === 6 ? "justify-between" : "justify-evenly"
+      }`}
+      // className={`flex ${
+      //   subject ? "w-[700px] pl-4" : "flex-col h-[700px] pt-4"
+      // } ${images.length === 6 ? "justify-between" : "justify-evenly"}`}
     >
+      <div className="absolute top-1/3 -left-[45px] text-center h-10">
+        Select <br /> {type}
+      </div>
       {images.map(image => (
         <img
-          className={`${
-            subject ? "my-2" : "mx-2"
-          } hover:scale-105 cursor-pointer border-3 border-solid ${
+          className={`my-2 hover:scale-105 cursor-pointer border-3 border-solid ${
             selected === image.url
               ? "scale-105 opacity-100"
               : "opacity-50 hover:opacity-90"
           }`}
+          // className={`${
+          //   subject ? "my-2" : "mx-2"
+          // } hover:scale-105 cursor-pointer ${
+          //   selected === image.url
+          //     ? "scale-105 opacity-100"
+          //     : "opacity-50 hover:opacity-90"
+          // }`}
           key={image.url}
           alt={image.url}
           src={image.url}
@@ -44,7 +55,14 @@ const ImageList = ({
           height={100}
           style={
             selected === image.url
-              ? { borderColor: subject ? "#34a853" : "#ea4335" }
+              ? {
+                  borderColor:
+                    type === "subject"
+                      ? "#34a853"
+                      : type === "style"
+                      ? "#ea4335"
+                      : "#fbbc05"
+                }
               : { borderColor: borderColor }
           }
           id={image.url}

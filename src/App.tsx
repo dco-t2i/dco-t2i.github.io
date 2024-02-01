@@ -58,7 +58,7 @@ function App() {
           textColor={"white"}
           titleFontSize={"4xl"}
         />
-        <SlideImageBox images={slideImages} backgroundColor={"white"} />\
+        <SlideImageBox images={slideImages} backgroundColor={"white"} />
         {/* FIXME: Main Personalizatin*/}
         <TextBox
           title={"My Subejct My Style"}
@@ -78,7 +78,7 @@ function App() {
           backgroundColor={bgColor}
           textColor={"white"}
         />
-        <SlideImageBox images={slideImages} backgroundColor={"white"} />\
+        <SlideImageBox images={slideImages} backgroundColor={"white"} />
         {/* style personalization */}
         {/* FIXME: How does it work? */}
         {/* <TextBox

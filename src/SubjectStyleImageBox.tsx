@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import ImageList from "./ImageList";
+import ActionList from "./ActionList";
+import { actions } from "./const";
 
 interface Props {
   title?: string;
@@ -22,6 +24,7 @@ const SubjectStyleImageBox = ({
 }: Props) => {
   const [subject, setSubject] = useState(subjectImages[0].url);
   const [style, setStyle] = useState(styleImages[0].url);
+  const [action, setAction] = useState(actions[0].path);
 
   const [composedImg, setComposedImg] = useState<string>(
     `/msms/${parseUrl2Name(subject)}/${parseUrl2Name(style)}.png`
@@ -57,14 +60,14 @@ const SubjectStyleImageBox = ({
             />
           </div>
         </div> */}
-        <div className="flex">
+        <div className="flex flex-col">
           <div>
             <ImageList
               images={subjectImages}
               selected={subject}
               setSelected={setSubject}
               borderColor={backgroundColor}
-              subject={false}
+              type={"subject"}
             />
           </div>
           <div>
@@ -73,19 +76,19 @@ const SubjectStyleImageBox = ({
               selected={style}
               setSelected={setStyle}
               borderColor={backgroundColor}
-              subject={false}
+              type={"style"}
             />
           </div>
           <div>
-            <ImageList
-              images={styleImages}
-              selected={style}
-              setSelected={setStyle}
-              borderColor={backgroundColor}
-              subject={false}
+            <ActionList
+              actions={actions}
+              selected={action}
+              setSelected={setAction}
+              // borderColor={backgroundColor}
+              // type={"action"}
             />
           </div>
-          <div className="pt-4 pl-4">
+          <div className="pl-4">
             <img alt={composedImg} src={composedImg} width={700} height={700} />
           </div>
         </div>

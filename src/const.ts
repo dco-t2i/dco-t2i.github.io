@@ -28,6 +28,15 @@ export const styleImages = [
   { url: "/msms/style6.png" }
 ];
 
+export const actions = [
+  { action: "...Ride a\nbike...", path: "bike1" },
+  { action: "...Ride a\nbike...", path: "bike2" },
+  { action: "...Ride a\nbike...", path: "bike3" },
+  { action: "...Ride a\nbike...", path: "bike4" },
+  { action: "...Ride a\nbike...", path: "bike5" },
+  { action: "...Ride a\nbike...", path: "bike6" }
+];
+
 export const hightlightImages = [{ url: "/main.png" }, { url: "/main.png" }];
 
 export const tldr = `Direct Consistency Optimization (DCO) enables generating enhanced compositional images with controllable sampling method.`;
