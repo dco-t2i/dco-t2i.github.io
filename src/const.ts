@@ -1,6 +1,7 @@
 export const bgColor = `#0065a2`;
 
 export const subjectImages = [
+  { url: "/subject_hp.png" },
   { url: "/subject/0.png" },
   { url: "/subject/1.png" },
   { url: "/subject/2.png" },
@@ -17,22 +18,20 @@ export const styleImages = [
   { url: "/style/5.png" }
 ];
 
+export const msmsImages = [{ url: "/msms1.png" }];
+
 export const subjectSelect = [
   { url: "/msms/subject1.png" },
   { url: "/msms/subject2.png" },
   { url: "/msms/subject3.png" },
-  { url: "/msms/subject4.png" },
-  { url: "/msms/subject5.png" },
-  { url: "/msms/subject6.png" }
+  { url: "/msms/subject4.png" }
 ];
 
 export const styleSelect = [
   { url: "/msms/style1.png" },
   { url: "/msms/style2.png" },
   { url: "/msms/style3.png" },
-  { url: "/msms/style4.png" },
-  { url: "/msms/style5.png" },
-  { url: "/msms/style6.png" }
+  { url: "/msms/style4.png" }
 ];
 
 export const actions = [

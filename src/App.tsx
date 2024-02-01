@@ -1,7 +1,6 @@
 import SlideImageBox from "./SlideImageBox";
 import TextBox from "./TextBox";
 import { WindowSizeContextProvider } from "./contexts/WindowSizeContext";
-import SubjectStyleImageBox from "./SubjectStyleImageBox";
 import Markdown from "./Markdown";
 import {
   bgColor,
@@ -10,8 +9,7 @@ import {
   cmpWithPriorWorks,
   styleImages,
   subjectImages,
-  subjectSelect,
-  styleSelect
+  msmsImages
 } from "./const";
 import OneImage from "./OneImage";
 import Organization from "./Organization";
@@ -54,7 +52,7 @@ function App() {
         </TextBox>
         {/* FIXME: Subject Personalization*/}
         <TextBox
-          title={"Subejct Personalization"}
+          title={"Subject Personalization"}
           backgroundColor={bgColor}
           textColor={"white"}
         />
@@ -69,7 +67,20 @@ function App() {
         <SlideImageBox images={styleImages} backgroundColor={"white"} />
         {/* FIXME: MSMS*/}
         <TextBox
-          title={"My Subejct My Style"}
+          title={"My Subject My Style"}
+          backgroundColor={bgColor}
+          textColor={"white"}
+        />
+        <SlideImageBox images={msmsImages} backgroundColor={"white"} />
+        {/* FIXME: MSMS*/}
+        <TextBox
+          title={"Compositional Generation"}
+          backgroundColor={bgColor}
+          textColor={"white"}
+        />
+        <SlideImageBox images={styleImages} backgroundColor={"white"} />
+        {/* <TextBox
+          title={"My Subject My Style"}
           backgroundColor={bgColor}
           textColor={"white"}
         />
@@ -77,7 +88,7 @@ function App() {
           subjectImages={subjectSelect}
           styleImages={styleSelect}
           backgroundColor={"white"}
-        />
+        /> */}
         {/* FIXME: One shot */}
         {/* subject personalization */}
         <TextBox
