@@ -28,11 +28,13 @@ const SubjectStyleImageBox = ({
 
   const [composedImg, setComposedImg] = useState<string>(
     `/msms/${parseUrl2Name(subject)}/${parseUrl2Name(style)}.png`
+    // `/msms/${parseUrl2Name(subject)}/${parseUrl2Name(style)}/${action}.png` 느낌
   );
 
   useEffect(() => {
     setComposedImg(
       `/msms/${parseUrl2Name(subject)}/${parseUrl2Name(style)}.png`
+      // `/msms/${parseUrl2Name(subject)}/${parseUrl2Name(style)}/${action}.png` 느낌
     );
   }, [subject, style, styleImages, subjectImages]);
 
@@ -79,17 +81,24 @@ const SubjectStyleImageBox = ({
               type={"style"}
             />
           </div>
-          <div>
-            <ActionList
-              actions={actions}
-              selected={action}
-              setSelected={setAction}
-              // borderColor={backgroundColor}
-              // type={"action"}
-            />
-          </div>
-          <div className="pl-4">
-            <img alt={composedImg} src={composedImg} width={700} height={700} />
+          <div className="flex">
+            <div className="pl-4">
+              <img
+                alt={composedImg}
+                src={composedImg}
+                width={1200}
+                height={1200}
+              />
+            </div>
+            <div>
+              <ActionList
+                actions={actions}
+                selected={action}
+                setSelected={setAction}
+                // borderColor={backgroundColor}
+                // type={"action"}
+              />
+            </div>
           </div>
         </div>
       </div>

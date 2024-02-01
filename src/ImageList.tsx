@@ -24,15 +24,15 @@ const ImageList = ({
 
   return (
     <div
-      className={`relative flex w-[700px] pl-4 ${
+      className={`relative flex w-[1400px] pl-4 ${
         images.length === 6 ? "justify-between" : "justify-evenly"
       }`}
       // className={`flex ${
       //   subject ? "w-[700px] pl-4" : "flex-col h-[700px] pt-4"
       // } ${images.length === 6 ? "justify-between" : "justify-evenly"}`}
     >
-      <div className="absolute top-1/3 -left-[45px] text-center h-10">
-        Select <br /> {type}
+      <div className="absolute top-[90px] -left-[100px] text-right w-24 h-10 text-3xl">
+        {type}
       </div>
       {images.map(image => (
         <img
@@ -51,8 +51,8 @@ const ImageList = ({
           key={image.url}
           alt={image.url}
           src={image.url}
-          width={100}
-          height={100}
+          width={200}
+          height={200}
           style={
             selected === image.url
               ? {
