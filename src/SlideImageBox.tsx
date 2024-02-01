@@ -29,8 +29,8 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
         style={{ backgroundColor: backgroundColor }}
       >
         <SimpleImageSlider
-          width={1000}
-          height={500}
+          width={1500}
+          height={770}
           images={images}
           showBullets={images.length > 1}
           showNavs={images.length > 1}

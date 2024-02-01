@@ -6,8 +6,8 @@ export const represents = ["/rep1.png", "/main.png", "main.png", "main.png"];
 
 export const slideImages = [
   { url: "/sp.png" },
-  { url: "/main.png" },
-  { url: "/main.png" }
+  { url: "/sp.png" },
+  { url: "/sp.png" }
 ];
 
 export const subjectImages = [
