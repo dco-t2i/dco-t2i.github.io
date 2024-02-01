@@ -1,6 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
 import SimpleImageSlider from "react-simple-image-slider";
-import ImageModal from "./ImageModal";
+// import ImageModal from "./ImageModal";
 
 interface Props {
   images: { url: string }[];
@@ -8,19 +8,19 @@ interface Props {
 }
 
 const SlideImageBox = ({ images, backgroundColor }: Props) => {
-  const [open, setOpen] = useState(false);
-  const [imageIdx, setImageIdx] = useState<number | undefined>();
+  // const [open, setOpen] = useState(false);
+  // const [imageIdx, setImageIdx] = useState<number | undefined>();
 
-  const handleClickImage = (
-    idx: number,
-    event: React.SyntheticEvent<Element, Event>
-  ): void => {
-    event.preventDefault();
-    event.stopPropagation();
+  // const handleClickImage = (
+  //   idx: number,
+  //   event: React.SyntheticEvent<Element, Event>
+  // ): void => {
+  //   event.preventDefault();
+  //   event.stopPropagation();
 
-    setOpen(true);
-    setImageIdx(idx);
-  };
+  //   setOpen(true);
+  //   setImageIdx(idx);
+  // };
 
   return (
     <>
@@ -34,13 +34,13 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
           images={images}
           showBullets={images.length > 1}
           showNavs={images.length > 1}
-          onClick={handleClickImage}
+          // onClick={handleClickImage}
           autoPlay={true}
           autoPlayDelay={3}
           bgColor="white"
         />
       </div>
-      {open && <ImageModal imgUrl={images[imageIdx!].url} setOpen={setOpen} />}
+      {/* {open && <ImageModal imgUrl={images[imageIdx!].url} setOpen={setOpen} />} */}
     </>
   );
 };

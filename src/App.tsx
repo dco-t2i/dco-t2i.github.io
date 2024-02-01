@@ -24,15 +24,15 @@ function App() {
         {/* FIXME: Title, Author */}
         <TextBox
           title={
-            <div className="text-5xl">
+            <>
               Direct Consistency Optimization for
               <br />
               Compositional Text-to-Image Personalization
-            </div>
+            </>
           }
           backgroundColor={"white"}
           textColor={"black"}
-          titleFontSize={"5xl"}
+          titleFontSize={"text-5xl"}
         >
           <Organization />
         </TextBox>
@@ -41,7 +41,7 @@ function App() {
           title={`TL;DR: ${tldr}`}
           backgroundColor={bgColor}
           textColor={"white"}
-          titleFontSize={"3xl"}
+          titleFontSize={"text-3xl"}
         />
         {/* FIXME: Abstract */}
         <TextBox
@@ -56,7 +56,6 @@ function App() {
           title={"Subejct / Style Personalization"}
           backgroundColor={bgColor}
           textColor={"white"}
-          titleFontSize={"4xl"}
         />
         <SlideImageBox images={slideImages} backgroundColor={"white"} />
         {/* FIXME: Main Personalizatin*/}
@@ -64,7 +63,6 @@ function App() {
           title={"My Subejct My Style"}
           backgroundColor={bgColor}
           textColor={"white"}
-          titleFontSize={"4xl"}
         />
         <SubjectStyleImageBox
           subjectImages={subjectImages}

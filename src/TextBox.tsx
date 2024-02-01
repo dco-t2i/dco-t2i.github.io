@@ -12,7 +12,7 @@ const TextBox = ({
   title,
   backgroundColor,
   textColor,
-  titleFontSize = "4xl",
+  titleFontSize,
   children
 }: Props) => (
   <div
@@ -20,14 +20,16 @@ const TextBox = ({
     style={{ backgroundColor: backgroundColor }}
   >
     <div
-      className={`text-center font-semibold text-${titleFontSize}`}
+      className={`text-center font-semibold ${
+        titleFontSize ? `${titleFontSize}` : "text-4xl"
+      }`}
       style={{ color: textColor }}
     >
       {title}
     </div>
     {children && (
       <div
-        className="text-justify text-xl pt-5 pb-5 mx-auto w-[1000px]"
+        className="text-justify text-xl pt-5 mx-auto w-[1000px]"
         style={{ color: textColor }}
       >
         {children}
