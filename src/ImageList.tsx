@@ -24,7 +24,7 @@ const ImageList = ({
 
   return (
     <div
-      className={`relative flex w-[1400px] pl-4 ${
+      className={`relative flex w-[1000px] pl-4 ${
         images.length === 6 ? "justify-between" : "justify-evenly"
       }`}
       // className={`flex ${
@@ -51,8 +51,8 @@ const ImageList = ({
           key={image.url}
           alt={image.url}
           src={image.url}
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           style={
             selected === image.url
               ? {

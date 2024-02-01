@@ -86,8 +86,8 @@ const SubjectStyleImageBox = ({
               <img
                 alt={composedImg}
                 src={composedImg}
-                width={1200}
-                height={1200}
+                width={1000}
+                height={1000}
               />
             </div>
             <div>

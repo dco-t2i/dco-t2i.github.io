@@ -19,12 +19,12 @@ const ActionList = ({ actions, selected, setSelected }: Props) => {
 
   return (
     <div
-      className={`"relative flex flex-col h-[1200px] pt-4"
+      className={`"relative flex flex-col h-[1000px] pt-4"
       } ${actions.length === 6 ? "justify-between" : "justify-evenly"}`}
     >
       {actions.map(action => (
         <div
-          className={`w-[200px] min-h-[180px] text-center justify-center flex flex-col my-2 hover:scale-105 cursor-pointer whitespace-pre-wrap text-2xl italic ${
+          className={`w-[150px] min-h-[130px] text-center justify-center flex flex-col my-2 hover:scale-105 cursor-pointer whitespace-pre-wrap text-2xl italic ${
             selected === action.path
               ? "scale-105 opacity-100"
               : "opacity-50 hover:opacity-90"
