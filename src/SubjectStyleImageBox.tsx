@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import ImageList from "./ImageList";
-import ActionList from "./ActionList";
-import { actions } from "./const";
 
 interface Props {
   title?: string;
@@ -24,7 +22,7 @@ const SubjectStyleImageBox = ({
 }: Props) => {
   const [subject, setSubject] = useState(subjectImages[0].url);
   const [style, setStyle] = useState(styleImages[0].url);
-  const [action, setAction] = useState(actions[0].path);
+  // const [action, setAction] = useState(actions[0].path);
 
   const [composedImg, setComposedImg] = useState<string>(
     `/msms/${parseUrl2Name(subject)}/${parseUrl2Name(style)}.png`
@@ -92,13 +90,13 @@ const SubjectStyleImageBox = ({
               />
             </div>
             <div>
-              <ActionList
+              {/* <ActionList
                 actions={actions}
                 selected={action}
                 setSelected={setAction}
                 // borderColor={backgroundColor}
                 // type={"action"}
-              />
+              /> */}
             </div>
           </div>
         </div>

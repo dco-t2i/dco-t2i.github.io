@@ -9,7 +9,8 @@ import {
   cmpWithPriorWorks,
   styleImages,
   subjectImages,
-  msmsImages
+  msmsImages,
+  multiImages
 } from "./const";
 import OneImage from "./OneImage";
 import Organization from "./Organization";
@@ -78,7 +79,7 @@ function App() {
           backgroundColor={bgColor}
           textColor={"white"}
         />
-        <SlideImageBox images={styleImages} backgroundColor={"white"} />
+        <SlideImageBox images={multiImages} backgroundColor={"white"} />
         {/* <TextBox
           title={"My Subject My Style"}
           backgroundColor={bgColor}
@@ -125,13 +126,13 @@ function App() {
             url: "/full_cmp.png"
           }}
         />
-        <TextBox
+        {/* <TextBox
           title={"Acknowledgements"}
           backgroundColor={bgColor}
           textColor={"white"}
         >
           This template was originally borrowed from xxx.
-        </TextBox>
+        </TextBox> */}
       </div>
     </WindowSizeContextProvider>
   );

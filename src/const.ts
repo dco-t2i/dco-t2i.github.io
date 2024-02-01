@@ -1,12 +1,15 @@
 export const bgColor = `#0065a2`;
 
 export const subjectImages = [
-  { url: "/subject_hp.png" },
-  { url: "/subject/0.png" },
-  { url: "/subject/1.png" },
-  { url: "/subject/2.png" },
-  { url: "/subject/3.png" },
-  { url: "/subject/4.png" }
+  { url: "/subject/0.jpeg" },
+  { url: "/subject/1.jpeg" },
+  { url: "/subject/2.jpeg" },
+  { url: "/subject/3.jpeg" },
+  { url: "/subject/4.jpeg" },
+  { url: "/subject/5.jpeg" },
+  { url: "/subject/6.jpeg" },
+  { url: "/subject/7.jpeg" },
+  { url: "/subject/8.jpeg" }
 ];
 
 export const styleImages = [
@@ -21,35 +24,20 @@ export const styleImages = [
 ];
 
 export const msmsImages = [
-  { url: "/msms/0.png" },
-  { url: "/msms/1.png" },
-  { url: "/msms/2.png" },
-  { url: "/msms/3.png" },
-  { url: "/msms/4.png" },
-  { url: "/msms/5.png" }
+  { url: "/msms/0.jpeg" },
+  { url: "/msms/1.jpeg" },
+  { url: "/msms/2.jpeg" },
+  { url: "/msms/3.jpeg" },
+  { url: "/msms/4.jpeg" }
 ];
 
-export const subjectSelect = [
-  { url: "/msms/subject1.png" },
-  { url: "/msms/subject2.png" },
-  { url: "/msms/subject3.png" },
-  { url: "/msms/subject4.png" }
-];
-
-export const styleSelect = [
-  { url: "/msms/style1.png" },
-  { url: "/msms/style2.png" },
-  { url: "/msms/style3.png" },
-  { url: "/msms/style4.png" }
-];
-
-export const actions = [
-  { action: "...Ride a\nbike...", path: "bike1" },
-  { action: "...Ride a\nbike...", path: "bike2" },
-  { action: "...Ride a\nbike...", path: "bike3" },
-  { action: "...Ride a\nbike...", path: "bike4" },
-  { action: "...Ride a\nbike...", path: "bike5" },
-  { action: "...Ride a\nbike...", path: "bike6" }
+export const multiImages = [
+  { url: "/multicomposition/0.jpeg" },
+  { url: "/multicomposition/1.jpeg" },
+  { url: "/multicomposition/2.jpeg" },
+  { url: "/multicomposition/3.jpeg" },
+  { url: "/multicomposition/4.jpeg" },
+  { url: "/multicomposition/5.jpeg" }
 ];
 
 export const hightlightImages = [{ url: "/main.png" }, { url: "/main.png" }];
