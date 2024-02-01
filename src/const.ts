@@ -40,8 +40,6 @@ export const multiImages = [
   { url: "/multicomposition/5.jpeg" }
 ];
 
-export const hightlightImages = [{ url: "/main.png" }, { url: "/main.png" }];
-
 export const tldr = `Direct Consistency Optimization (DCO) enables generating enhanced compositional images with controllable sampling method.`;
 
 export const abstract = `Text-to-image (T2I) diffusion models, when fine-tuned on few personal images, are able to generate visuals with high degree of consistency. 

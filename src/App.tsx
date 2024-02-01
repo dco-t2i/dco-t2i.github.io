@@ -18,9 +18,7 @@ import Organization from "./Organization";
 function App() {
   return (
     <WindowSizeContextProvider>
-      <div className="w-screen h-screen min-w-[1340px]">
-        {/* FIXME: Top Image */}
-        {/* <TopImageBox backgroundColor={"white"} textColor={"black"} /> */}
+      <div className="w-screen h-screen min-w-[1400px]">
         {/* FIXME: Title, Author */}
         <TextBox
           title={
@@ -58,7 +56,6 @@ function App() {
           textColor={"white"}
         />
         <SlideImageBox images={subjectImages} backgroundColor={"white"} />
-
         {/* FIXME: Style Personalization*/}
         <TextBox
           title={"Style Personalization"}
@@ -73,46 +70,20 @@ function App() {
           textColor={"white"}
         />
         <SlideImageBox images={msmsImages} backgroundColor={"white"} />
-        {/* FIXME: MSMS*/}
+        {/* FIXME: Multi compositional*/}
         <TextBox
           title={"Compositional Generation"}
           backgroundColor={bgColor}
           textColor={"white"}
         />
         <SlideImageBox images={multiImages} backgroundColor={"white"} />
-        {/* <TextBox
-          title={"My Subject My Style"}
-          backgroundColor={bgColor}
-          textColor={"white"}
-        />
-        <SubjectStyleImageBox
-          subjectImages={subjectSelect}
-          styleImages={styleSelect}
-          backgroundColor={"white"}
-        /> */}
         {/* FIXME: One shot */}
-        {/* subject personalization */}
         <TextBox
           title={"One Shot Personalization"}
           backgroundColor={bgColor}
           textColor={"white"}
         />
         <SlideImageBox images={styleImages} backgroundColor={"white"} />
-        {/* style personalization */}
-        {/* FIXME: How does it work? */}
-        {/* <TextBox
-          title={"How does it work?"}
-          backgroundColor={"white"}
-          textColor={"black"}
-        >
-          <HighlightBox
-            leftImage={hightlightImages[0]}
-            rightImage={hightlightImages[1]}
-            leftText={highlightTexts[0]}
-            rightText={highlightTexts[1]}
-            backgroundColor={"white"}
-          />
-        </TextBox> */}
         {/* FIXME: Comparison with other methods */}
         <TextBox
           title={"Comparison with prior works"}
@@ -126,13 +97,11 @@ function App() {
             url: "/full_cmp.png"
           }}
         />
-        {/* <TextBox
-          title={"Acknowledgements"}
+        <TextBox
+          title={"ICML 2024 Submission"}
           backgroundColor={bgColor}
           textColor={"white"}
-        >
-          This template was originally borrowed from xxx.
-        </TextBox> */}
+        />
       </div>
     </WindowSizeContextProvider>
   );
