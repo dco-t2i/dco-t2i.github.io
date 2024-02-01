@@ -101,6 +101,7 @@ function App() {
           title={"ICML 2024 Submission"}
           backgroundColor={bgColor}
           textColor={"white"}
+          last={true}
         />
       </div>
     </WindowSizeContextProvider>
