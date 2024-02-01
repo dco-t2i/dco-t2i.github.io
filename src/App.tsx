@@ -2,23 +2,16 @@ import SlideImageBox from "./SlideImageBox";
 import TextBox from "./TextBox";
 import { WindowSizeContextProvider } from "./contexts/WindowSizeContext";
 import SubjectStyleImageBox from "./SubjectStyleImageBox";
-import TopImageBox from "./TopImageBox";
 import Markdown from "./Markdown";
 import {
+  bgColor,
   tldr,
   abstract,
-  highlightTexts,
-  mySubjectMyStyle,
-  oneShotPersonalization,
   cmpWithPriorWorks,
-  multiCompositional,
-  hightlightImages,
-  mainImage,
   slideImages,
   styleImages,
   subjectImages
 } from "./const";
-import HighlightBox from "./HighlightBox";
 import OneImage from "./OneImage";
 import Organization from "./Organization";
 
@@ -27,8 +20,7 @@ function App() {
     <WindowSizeContextProvider>
       <div className="w-screen h-screen min-w-[1340px]">
         {/* FIXME: Top Image */}
-        <TopImageBox backgroundColor={"white"} textColor={"black"} />
-
+        {/* <TopImageBox backgroundColor={"white"} textColor={"black"} /> */}
         {/* FIXME: Title, Author */}
         <TextBox
           title={
@@ -44,16 +36,13 @@ function App() {
         >
           <Organization />
         </TextBox>
-
         {/* FIXME: TL;DR */}
         <TextBox
           title={`TL;DR: ${tldr}`}
-          backgroundColor={"gray"}
+          backgroundColor={bgColor}
           textColor={"white"}
           titleFontSize={"3xl"}
-        ></TextBox>
-
-        {/* Section1 */}
+        />
         {/* FIXME: Abstract */}
         <TextBox
           title={"Abstract"}
@@ -61,32 +50,38 @@ function App() {
           textColor={"black"}
         >
           <Markdown text={abstract} />
-          <OneImage image={mainImage} />
         </TextBox>
-
-        {/* Section2 */}
+        {/* FIXME: Main Personalizatin*/}
+        <TextBox
+          title={"Subejct / Style Personalization"}
+          backgroundColor={bgColor}
+          textColor={"white"}
+          titleFontSize={"4xl"}
+        />
+        <SlideImageBox images={slideImages} backgroundColor={"white"} />\
+        {/* FIXME: Main Personalizatin*/}
+        <TextBox
+          title={"My Subejct My Style"}
+          backgroundColor={bgColor}
+          textColor={"white"}
+          titleFontSize={"4xl"}
+        />
+        <SubjectStyleImageBox
+          subjectImages={subjectImages}
+          styleImages={styleImages}
+          backgroundColor={"white"}
+        />
         {/* FIXME: Main figures */}
         {/* subject personalization */}
         <TextBox
-          title={"Subject Personalization"}
-          backgroundColor={"gray"}
+          title={"One Shot Personalization"}
+          backgroundColor={bgColor}
           textColor={"white"}
-        >
-          <SlideImageBox images={slideImages} backgroundColor={"gray"} />
-        </TextBox>
-        <div className="border-b border-white h-1"></div>
+        />
+        <SlideImageBox images={slideImages} backgroundColor={"white"} />\
         {/* style personalization */}
-        <TextBox
-          title={"Style Personalization"}
-          backgroundColor={"gray"}
-          textColor={"white"}
-        >
-          <SlideImageBox images={slideImages} backgroundColor={"gray"} />
-        </TextBox>
-
-        {/* Section3 */}
         {/* FIXME: How does it work? */}
-        <TextBox
+        {/* <TextBox
           title={"How does it work?"}
           backgroundColor={"white"}
           textColor={"black"}
@@ -98,70 +93,24 @@ function App() {
             rightText={highlightTexts[1]}
             backgroundColor={"white"}
           />
-        </TextBox>
-
-        {/* Section4 */}
-        {/* FIXME: 1-shot personalization */}
-        <TextBox
-          title={"1 shot Personalization"}
-          backgroundColor={"gray"}
-          textColor={"white"}
-        >
-          <Markdown text={oneShotPersonalization} />
-        </TextBox>
-
-        {/* FIXME: My style My object */}
-        <TextBox
-          title={"My Subject, My Style"}
-          backgroundColor={"white"}
-          textColor={"black"}
-        >
-          <Markdown text={mySubjectMyStyle} />
-          <SubjectStyleImageBox
-            subjectImages={subjectImages}
-            styleImages={styleImages}
-            backgroundColor={"white"}
-          />
-        </TextBox>
-
-        {/* FIXME: Multiple Compositional */}
-        <TextBox
-          title={"Multi-compositional Image Generation"}
-          backgroundColor={"gray"}
-          textColor={"white"}
-        >
-          <Markdown text={multiCompositional} />
-          <SlideImageBox images={slideImages} backgroundColor={"gray"} />
-        </TextBox>
-
+        </TextBox> */}
         {/* FIXME: Comparison with other methods */}
         <TextBox
           title={"Comparison with prior works"}
-          backgroundColor={"white"}
-          textColor={"black"}
-        >
-          <Markdown text={cmpWithPriorWorks} />
-          <OneImage
-            image={{
-              url: "/full_cmp.png"
-            }}
-          />
-        </TextBox>
-
-        {/* FIXME: Comparison with other methods */}
-        <TextBox
-          title={"Quantitative Results"}
-          backgroundColor={"gray"}
+          backgroundColor={bgColor}
           textColor={"white"}
         >
-          <Markdown text={multiCompositional} />
-          <SlideImageBox images={slideImages} backgroundColor={"gray"} />
+          <Markdown text={cmpWithPriorWorks} />
         </TextBox>
-
+        <OneImage
+          image={{
+            url: "/full_cmp.png"
+          }}
+        />
         <TextBox
           title={"Acknowledgements"}
-          backgroundColor={"white"}
-          textColor={"black"}
+          backgroundColor={bgColor}
+          textColor={"white"}
         >
           This template was originally borrowed from xxx.
         </TextBox>

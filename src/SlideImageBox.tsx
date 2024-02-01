@@ -25,7 +25,7 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
   return (
     <>
       <div
-        className="flex justify-center items-center relative"
+        className="flex justify-center items-center relative pt-10px"
         style={{ backgroundColor: backgroundColor }}
       >
         <SimpleImageSlider

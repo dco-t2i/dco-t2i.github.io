@@ -1,9 +1,11 @@
+export const bgColor = `#0065a2`;
+
 export const mainImage = { url: "/main.png" };
 
-export const represents = ["/main.png", "/main.png", "main.png", "main.png"];
+export const represents = ["/rep1.png", "/main.png", "main.png", "main.png"];
 
 export const slideImages = [
-  { url: "/main.png" },
+  { url: "/sp.png" },
   { url: "/main.png" },
   { url: "/main.png" }
 ];

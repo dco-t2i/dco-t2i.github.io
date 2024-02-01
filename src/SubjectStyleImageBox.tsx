@@ -45,7 +45,7 @@ const SubjectStyleImageBox = ({
         {title}
       </div>
       <div className="flex flex-col m-0 px-28 py-14">
-        <div className="flex">
+        {/* <div className="flex">
           <div className="mx-2 w-[106px]"></div>
           <div>
             <ImageList
@@ -56,8 +56,26 @@ const SubjectStyleImageBox = ({
               subject={true}
             />
           </div>
-        </div>
+        </div> */}
         <div className="flex">
+          <div>
+            <ImageList
+              images={subjectImages}
+              selected={subject}
+              setSelected={setSubject}
+              borderColor={backgroundColor}
+              subject={false}
+            />
+          </div>
+          <div>
+            <ImageList
+              images={styleImages}
+              selected={style}
+              setSelected={setStyle}
+              borderColor={backgroundColor}
+              subject={false}
+            />
+          </div>
           <div>
             <ImageList
               images={styleImages}
