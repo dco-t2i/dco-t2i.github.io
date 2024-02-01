@@ -10,15 +10,24 @@ export const subjectImages = [
 ];
 
 export const styleImages = [
-  { url: "/style/0.png" },
-  { url: "/style/1.png" },
-  { url: "/style/2.png" },
-  { url: "/style/3.png" },
-  { url: "/style/4.png" },
-  { url: "/style/5.png" }
+  { url: "/style/0.jpeg" },
+  { url: "/style/1.jpeg" },
+  { url: "/style/2.jpeg" },
+  { url: "/style/3.jpeg" },
+  { url: "/style/4.jpeg" },
+  { url: "/style/5.jpeg" },
+  { url: "/style/6.jpeg" },
+  { url: "/style/7.jpeg" }
 ];
 
-export const msmsImages = [{ url: "/msms1.png" }];
+export const msmsImages = [
+  { url: "/msms/0.png" },
+  { url: "/msms/1.png" },
+  { url: "/msms/2.png" },
+  { url: "/msms/3.png" },
+  { url: "/msms/4.png" },
+  { url: "/msms/5.png" }
+];
 
 export const subjectSelect = [
   { url: "/msms/subject1.png" },
