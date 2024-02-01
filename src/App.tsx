@@ -8,9 +8,10 @@ import {
   tldr,
   abstract,
   cmpWithPriorWorks,
-  slideImages,
   styleImages,
-  subjectImages
+  subjectImages,
+  subjectSelect,
+  styleSelect
 } from "./const";
 import OneImage from "./OneImage";
 import Organization from "./Organization";
@@ -51,32 +52,40 @@ function App() {
         >
           <Markdown text={abstract} />
         </TextBox>
-        {/* FIXME: Main Personalizatin*/}
+        {/* FIXME: Subject Personalization*/}
         <TextBox
-          title={"Subejct / Style Personalization"}
+          title={"Subejct Personalization"}
           backgroundColor={bgColor}
           textColor={"white"}
         />
-        <SlideImageBox images={slideImages} backgroundColor={"white"} />
-        {/* FIXME: Main Personalizatin*/}
+        <SlideImageBox images={subjectImages} backgroundColor={"white"} />
+
+        {/* FIXME: Style Personalization*/}
+        <TextBox
+          title={"Style Personalization"}
+          backgroundColor={bgColor}
+          textColor={"white"}
+        />
+        <SlideImageBox images={styleImages} backgroundColor={"white"} />
+        {/* FIXME: MSMS*/}
         <TextBox
           title={"My Subejct My Style"}
           backgroundColor={bgColor}
           textColor={"white"}
         />
         <SubjectStyleImageBox
-          subjectImages={subjectImages}
-          styleImages={styleImages}
+          subjectImages={subjectSelect}
+          styleImages={styleSelect}
           backgroundColor={"white"}
         />
-        {/* FIXME: Main figures */}
+        {/* FIXME: One shot */}
         {/* subject personalization */}
         <TextBox
           title={"One Shot Personalization"}
           backgroundColor={bgColor}
           textColor={"white"}
         />
-        <SlideImageBox images={slideImages} backgroundColor={"white"} />
+        <SlideImageBox images={styleImages} backgroundColor={"white"} />
         {/* style personalization */}
         {/* FIXME: How does it work? */}
         {/* <TextBox

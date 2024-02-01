@@ -1,16 +1,24 @@
 export const bgColor = `#0065a2`;
 
-export const mainImage = { url: "/main.png" };
-
-export const represents = ["/rep1.png", "/main.png", "main.png", "main.png"];
-
-export const slideImages = [
-  { url: "/sp.png" },
-  { url: "/sp.png" },
-  { url: "/sp.png" }
+export const subjectImages = [
+  { url: "/style/0.png" },
+  { url: "/style/1.png" },
+  { url: "/style/2.png" },
+  { url: "/style/3.png" },
+  { url: "/style/4.png" },
+  { url: "/style/5.png" }
 ];
 
-export const subjectImages = [
+export const styleImages = [
+  { url: "/style/0.png" },
+  { url: "/style/1.png" },
+  { url: "/style/2.png" },
+  { url: "/style/3.png" },
+  { url: "/style/4.png" },
+  { url: "/style/5.png" }
+];
+
+export const subjectSelect = [
   { url: "/msms/subject1.png" },
   { url: "/msms/subject2.png" },
   { url: "/msms/subject3.png" },
@@ -19,7 +27,7 @@ export const subjectImages = [
   { url: "/msms/subject6.png" }
 ];
 
-export const styleImages = [
+export const styleSelect = [
   { url: "/msms/style1.png" },
   { url: "/msms/style2.png" },
   { url: "/msms/style3.png" },
@@ -59,10 +67,12 @@ export const highlightTexts = [
 
 export const oneShotPersonalization = `DCO generates high-quality novel images from text prompts in any background, style and etc with only a single referecne image.`;
 
-export const mySubjectMyStyle = `Personalization: By casting T2I diffusion model fine-tuning problem as a constrained policy optimization problem, we propose DCO loss which regularlizes the KL divergence with respect to the reference images.
-  DCO loss does not require auxiliary dataset while preventing the model from catastorphic forgetting problem.`;
+export const mySubjectMyStyle = ``;
 
 export const multiCompositional = `Personalization: By casting T2I diffusion model fine-tuning problem as a constrained policy optimization problem, we propose DCO loss which regularlizes the KL divergence with respect to the reference images.
   DCO loss does not require auxiliary dataset while preventing the model from catastorphic forgetting problem`;
 
-export const cmpWithPriorWorks = `DCO enables generating images with enhanced subject identity preservation and prompt alignment. For example, prior works fail to generate either <dog> or blueprint style while DCO maintains <dog> in blueprint style.`;
+export const cmpWithPriorWorks = `DCO enables generating images with enhanced subject identity preservation and prompt alignment compared to prior works. For example, prior works fail to generate either dog or blueprint style while DCO maintains dog in blueprint style (see 2nd row).`;
+
+export const mainImage = { url: "/main.png" };
+export const represents = ["/rep1.png", "/main.png", "main.png", "main.png"];
