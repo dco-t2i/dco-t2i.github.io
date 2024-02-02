@@ -6,7 +6,6 @@ import {
   bgColor,
   tldr,
   abstract,
-  cmpWithPriorWorks,
   styleImages,
   subjectImages,
   msmsImages,
@@ -15,10 +14,8 @@ import {
   subjectPersonalization,
   stylePersonalization,
   mySubjectMyStyle,
-  oneShotPersonalization,
-  multiCompositional
+  oneShotPersonalization
 } from "./const";
-import OneImage from "./OneImage";
 import Organization from "./Organization";
 
 function App() {
@@ -57,7 +54,7 @@ function App() {
         </TextBox>
         {/* FIXME: Subject Personalization*/}
         <TextBox
-          title={"Subject Personalization"}
+          title={"Subject Consistent Text-to-Image Generation"}
           backgroundColor={bgColor}
           textColor={"white"}
         >
@@ -66,7 +63,7 @@ function App() {
         <SlideImageBox images={subjectImages} backgroundColor={"white"} />
         {/* FIXME: Style Personalization*/}
         <TextBox
-          title={"Style Personalization"}
+          title={"Style Consistent Text-to-Image Generation"}
           backgroundColor={bgColor}
           textColor={"white"}
         >
@@ -75,25 +72,17 @@ function App() {
         <SlideImageBox images={styleImages} backgroundColor={"white"} />
         {/* FIXME: MSMS*/}
         <TextBox
-          title={"My Subject My Style"}
+          title={"Custom Subject in Custom Style"}
           backgroundColor={bgColor}
           textColor={"white"}
         >
           <Markdown text={mySubjectMyStyle} />
         </TextBox>
         <SlideImageBox images={msmsImages} backgroundColor={"white"} />
-        {/* FIXME: Multi compositional*/}
-        <TextBox
-          title={"Compositional Generation"}
-          backgroundColor={bgColor}
-          textColor={"white"}
-        >
-          <Markdown text={multiCompositional} />
-        </TextBox>
         <SlideImageBox images={multiImages} backgroundColor={"white"} />
         {/* FIXME: One shot */}
         <TextBox
-          title={"One Shot Personalization"}
+          title={"One Shot Subject Personalization"}
           backgroundColor={bgColor}
           textColor={"white"}
         >
@@ -101,7 +90,7 @@ function App() {
         </TextBox>
         <SlideImageBox images={oneShotImages} backgroundColor={"white"} />
         {/* FIXME: Comparison with other methods */}
-        <TextBox
+        {/* <TextBox
           title={"Comparison with prior works"}
           backgroundColor={bgColor}
           textColor={"white"}
@@ -112,7 +101,7 @@ function App() {
           image={{
             url: "/full_cmp.png"
           }}
-        />
+        /> */}
         <TextBox
           title={"ICML 2024 Submission"}
           backgroundColor={bgColor}

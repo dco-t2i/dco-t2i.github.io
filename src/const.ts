@@ -59,15 +59,10 @@ export const abstract = `Text-to-image (T2I) diffusion models, when fine-tuned o
   We show the efficacy of proposed method on the T2I personalization for subject, style, or both.
   In particular, our method results in superior Pareto frontier to the baselines.`;
 
-export const subjectPersonalization = `***DCO*** generates subject consistent images with high image-text alignment, *e.g.*, changing the outfits, backgrounds, attributes (top row) or converting into various styles (bottom row). `;
+export const subjectPersonalization = `DCO generates consistent images of a subject given by reference images, composed with textual prompts, *e.g.*, changing the outfits, backgrounds, attributes (top row) or converting into various styles (bottom row).`;
 
-export const stylePersonalization = ``;
+export const stylePersonalization = `DCO generates style-consistent images of various contents, given a single reference image.`;
 
-export const mySubjectMyStyle = ``;
+export const mySubjectMyStyle = `The high compositionality of DCO enables merging independently trained subject and style personalized models without any distraction.`;
 
-export const multiCompositional = ``;
-
-export const oneShotPersonalization = ` `;
-
-export const cmpWithPriorWorks = `DCO enables generating images with enhanced subject identity preservation and prompt alignment compared to prior works. 
-For example, prior works fail to generate either dog or blueprint style while DCO maintains dog in blueprint style (see 2nd row).`;
+export const oneShotPersonalization = ` Our method enables subject consistent text-to-image generation with a single reference image.`;
