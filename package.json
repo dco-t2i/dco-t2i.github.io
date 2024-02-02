@@ -1,7 +1,7 @@
 {
   "name": "paper",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "module": "./src/index.tsx",
   "scripts": {
@@ -36,5 +36,5 @@
     "vite": "^5.0.8",
     "vite-tsconfig-paths": "4.2.2"
   },
-  "homepage": "https://jinyeop1214.github.io"
+  "homepage": "https://dco-t2i.github.io"
 }
