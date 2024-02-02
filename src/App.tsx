@@ -10,7 +10,8 @@ import {
   styleImages,
   subjectImages,
   msmsImages,
-  multiImages
+  multiImages,
+  oneShotImages
 } from "./const";
 import OneImage from "./OneImage";
 import Organization from "./Organization";
@@ -83,7 +84,7 @@ function App() {
           backgroundColor={bgColor}
           textColor={"white"}
         />
-        <SlideImageBox images={styleImages} backgroundColor={"white"} />
+        <SlideImageBox images={oneShotImages} backgroundColor={"white"} />
         {/* FIXME: Comparison with other methods */}
         <TextBox
           title={"Comparison with prior works"}

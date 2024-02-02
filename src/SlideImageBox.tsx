@@ -28,7 +28,7 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
         >
           {images.map(image => (
             <SwiperSlide key={image.url} className="text-center">
-              <img loading="lazy" src={image.url} width={1500} height={770} />
+              <img loading="lazy" src={image.url} width={1500} />
             </SwiperSlide>
           ))}
         </Swiper>
