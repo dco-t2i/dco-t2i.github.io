@@ -72,7 +72,7 @@ function App() {
         <SlideImageBox images={styleImages} backgroundColor={"white"} />
         {/* FIXME: MSMS*/}
         <TextBox
-          title={"Custom Subject in Custom Style"}
+          title={"Custom Subject in Custom Style Generation"}
           backgroundColor={bgColor}
           textColor={"white"}
         >

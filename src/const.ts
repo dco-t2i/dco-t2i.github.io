@@ -63,6 +63,6 @@ export const subjectPersonalization = `DCO generates consistent images of a subj
 
 export const stylePersonalization = `DCO generates style-consistent images of various contents, given a single reference image.`;
 
-export const mySubjectMyStyle = `The high compositionality of DCO enables merging independently trained subject and style personalized models without any distraction.`;
+export const mySubjectMyStyle = `The high compositionality of DCO enables merging independently trained subject \n\nand style personalized models without any distraction.`;
 
 export const oneShotPersonalization = ` Our method enables subject consistent text-to-image generation with a single reference image.`;
