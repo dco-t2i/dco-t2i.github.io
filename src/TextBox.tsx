@@ -44,7 +44,7 @@ const TextBox = ({
       )}
       {last && (
         <div
-          className="absolute rounded-lg top-1/3 right-3 h-10 flex flex-col justify-center items-center text-white text-sm cursor-pointer"
+          className="absolute rounded-lg top-1/3 right-5 h-10 flex flex-col justify-center items-center text-white text-sm cursor-pointer"
           onClick={handleClickTop}
         >
           <TopSvg />
