@@ -89,19 +89,6 @@ function App() {
           <Markdown text={oneShotPersonalization} />
         </TextBox>
         <SlideImageBox images={oneShotImages} backgroundColor={"white"} />
-        {/* FIXME: Comparison with other methods */}
-        {/* <TextBox
-          title={"Comparison with prior works"}
-          backgroundColor={bgColor}
-          textColor={"white"}
-        >
-          <Markdown text={cmpWithPriorWorks} />
-        </TextBox>
-        <OneImage
-          image={{
-            url: "/full_cmp.png"
-          }}
-        /> */}
         <TextBox
           title={"ICML 2024 Submission"}
           backgroundColor={bgColor}

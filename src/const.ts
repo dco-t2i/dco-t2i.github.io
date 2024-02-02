@@ -47,7 +47,7 @@ export const oneShotImages = [
   { url: "/oneshot/3.jpeg" }
 ];
 
-export const tldr = `Direct Consistency Optimization (DCO) enables generating enhanced compositional images with controllable sampling method.`;
+export const tldr = `DCO enhances compositionality of personalized text-to-image models by preserving pretrained knowledge`;
 
 export const abstract = `Text-to-image (T2I) diffusion models, when fine-tuned on few personal images, are able to generate visuals with high degree of consistency. 
   However, they still lacks in synthesizing images of different scenario or styles that are possible in the original pretrained models. 
