@@ -11,7 +11,12 @@ import {
   subjectImages,
   msmsImages,
   multiImages,
-  oneShotImages
+  oneShotImages,
+  subjectPersonalization,
+  stylePersonalization,
+  mySubjectMyStyle,
+  oneShotPersonalization,
+  multiCompositional
 } from "./const";
 import OneImage from "./OneImage";
 import Organization from "./Organization";
@@ -55,35 +60,45 @@ function App() {
           title={"Subject Personalization"}
           backgroundColor={bgColor}
           textColor={"white"}
-        />
+        >
+          <Markdown text={subjectPersonalization} />
+        </TextBox>
         <SlideImageBox images={subjectImages} backgroundColor={"white"} />
         {/* FIXME: Style Personalization*/}
         <TextBox
           title={"Style Personalization"}
           backgroundColor={bgColor}
           textColor={"white"}
-        />
+        >
+          <Markdown text={stylePersonalization} />
+        </TextBox>
         <SlideImageBox images={styleImages} backgroundColor={"white"} />
         {/* FIXME: MSMS*/}
         <TextBox
           title={"My Subject My Style"}
           backgroundColor={bgColor}
           textColor={"white"}
-        />
+        >
+          <Markdown text={mySubjectMyStyle} />
+        </TextBox>
         <SlideImageBox images={msmsImages} backgroundColor={"white"} />
         {/* FIXME: Multi compositional*/}
         <TextBox
           title={"Compositional Generation"}
           backgroundColor={bgColor}
           textColor={"white"}
-        />
+        >
+          <Markdown text={multiCompositional} />
+        </TextBox>
         <SlideImageBox images={multiImages} backgroundColor={"white"} />
         {/* FIXME: One shot */}
         <TextBox
           title={"One Shot Personalization"}
           backgroundColor={bgColor}
           textColor={"white"}
-        />
+        >
+          <Markdown text={oneShotPersonalization} />
+        </TextBox>
         <SlideImageBox images={oneShotImages} backgroundColor={"white"} />
         {/* FIXME: Comparison with other methods */}
         <TextBox

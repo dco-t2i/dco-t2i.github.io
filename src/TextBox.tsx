@@ -36,7 +36,7 @@ const TextBox = ({
       </div>
       {children && (
         <div
-          className="text-justify text-xl pt-5 mx-auto w-[1000px]"
+          className="text-justify text-xl pt-5 mx-auto w-[1050px]"
           style={{ color: textColor }}
         >
           {children}
