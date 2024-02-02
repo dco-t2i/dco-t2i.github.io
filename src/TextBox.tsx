@@ -37,7 +37,7 @@ const TextBox = ({
       {children && (
         <div
           className="text-justify text-xl pt-5 mx-auto w-[1050px]"
-          style={{ color: textColor }}
+          style={{ color: textColor, textAlignLast: "center" }}
         >
           {children}
         </div>
