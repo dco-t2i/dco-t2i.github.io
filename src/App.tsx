@@ -17,6 +17,7 @@ import {
   oneShotPersonalization
 } from "./const";
 import Organization from "./Organization";
+import AbstractBox from "./AbstractBox";
 
 function App() {
   return (
@@ -45,13 +46,13 @@ function App() {
           titleFontSize={"text-3xl"}
         />
         {/* FIXME: Abstract */}
-        <TextBox
+        <AbstractBox
           title={"Abstract"}
           backgroundColor={"white"}
           textColor={"black"}
         >
           <Markdown text={abstract} />
-        </TextBox>
+        </AbstractBox>
         {/* FIXME: Subject Personalization*/}
         <TextBox
           title={"Subject Consistent Text-to-Image Generation"}
