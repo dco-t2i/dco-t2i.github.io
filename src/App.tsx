@@ -90,12 +90,12 @@ function App() {
           <Markdown text={oneShotPersonalization} />
         </TextBox>
         <SlideImageBox images={oneShotImages} backgroundColor={"white"} />
-        <TextBox
+        {/* <TextBox
           title={"ICML 2024 Submission"}
           backgroundColor={bgColor}
           textColor={"white"}
           last={true}
-        />
+        /> */}
       </div>
     </WindowSizeContextProvider>
   );
