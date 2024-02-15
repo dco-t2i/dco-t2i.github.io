@@ -1,50 +1,63 @@
 export const bgColor = `#0065a2`;
 
 export const subjectImages = [
-  { url: "/subject/0.jpeg" },
-  { url: "/subject/1.jpeg" },
-  { url: "/subject/2.jpeg" },
-  { url: "/subject/3.jpeg" },
-  { url: "/subject/4.jpeg" },
-  { url: "/subject/5.jpeg" },
-  { url: "/subject/6.jpeg" },
-  { url: "/subject/7.jpeg" },
-  { url: "/subject/8.jpeg" }
+  { url: "/1_subject/0.jpeg" },
+  { url: "/1_subject/1.jpeg" },
+  { url: "/1_subject/2.jpeg" },
+  { url: "/1_subject/3.jpeg" },
+  { url: "/1_subject/4.jpeg" },
+  { url: "/1_subject/5.jpeg" },
+  { url: "/1_subject/6.jpeg" },
+  { url: "/1_subject/7.jpeg" },
+  { url: "/1_subject/8.jpeg" }
 ];
 
 export const styleImages = [
-  { url: "/style/0.jpeg" },
-  { url: "/style/1.jpeg" },
-  { url: "/style/2.jpeg" },
-  { url: "/style/3.jpeg" },
-  { url: "/style/4.jpeg" },
-  { url: "/style/5.jpeg" },
-  { url: "/style/6.jpeg" },
-  { url: "/style/7.jpeg" }
+  { url: "/2_style/0.jpeg" },
+  { url: "/2_style/1.jpeg" },
+  { url: "/2_style/2.jpeg" },
+  { url: "/2_style/3.jpeg" },
+  { url: "/2_style/4.jpeg" },
+  { url: "/2_style/5.jpeg" },
+  { url: "/2_style/6.jpeg" },
+  { url: "/2_style/7.jpeg" },
+  { url: "/2_style/8.jpeg" },
+  { url: "/2_style/9.jpeg" },
+  { url: "/2_style/10.jpeg" },
+  { url: "/2_style/11.jpeg" },
+  { url: "/2_style/12.jpeg" },
+  { url: "/2_style/13.jpeg" },
+  { url: "/2_style/14.jpeg" },
+  { url: "/2_style/15.jpeg" }
 ];
 
 export const msmsImages = [
-  { url: "/msms/0.jpeg" },
-  { url: "/msms/1.jpeg" },
-  { url: "/msms/2.jpeg" },
-  { url: "/msms/3.jpeg" },
-  { url: "/msms/4.jpeg" }
+  { url: "/3_moms/0.jpeg" },
+  { url: "/3_moms/1.jpeg" },
+  { url: "/3_moms/2.jpeg" },
+  { url: "/3_moms/3.jpeg" },
+  { url: "/3_moms/4.jpeg" },
+  { url: "/3_moms/5.jpeg" },
+  { url: "/3_moms/6.jpeg" },
+  { url: "/3_moms/7.jpeg" }
 ];
 
 export const multiImages = [
-  { url: "/multicomposition/0.jpeg" },
-  { url: "/multicomposition/1.jpeg" },
-  { url: "/multicomposition/2.jpeg" },
-  { url: "/multicomposition/3.jpeg" },
-  { url: "/multicomposition/4.jpeg" },
-  { url: "/multicomposition/5.jpeg" }
+  { url: "/4_multicomposition/0.jpeg" },
+  { url: "/4_multicomposition/1.jpeg" },
+  { url: "/4_multicomposition/2.jpeg" },
+  { url: "/4_multicomposition/3.jpeg" },
+  { url: "/4_multicomposition/4.jpeg" },
+  { url: "/4_multicomposition/5.jpeg" },
+  { url: "/4_multicomposition/6.jpeg" },
+  { url: "/4_multicomposition/7.jpeg" }
 ];
 
 export const oneShotImages = [
-  { url: "/oneshot/0.jpeg" },
-  { url: "/oneshot/1.jpeg" },
-  { url: "/oneshot/2.jpeg" },
-  { url: "/oneshot/3.jpeg" }
+  { url: "/5_1shot/0.jpeg" },
+  { url: "/5_1shot/1.jpeg" },
+  { url: "/5_1shot/2.jpeg" },
+  { url: "/5_1shot/3.jpeg" }
 ];
 
 export const tldr = `DCO enhances compositionality of personalized text-to-image models by preserving pretrained knowledge`;
