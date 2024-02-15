@@ -1,5 +1,7 @@
 import Author from "./Author";
+import CODEBtn from "./CODEBtn";
 import Department from "./Department";
+import PDFBtn from "./PDFBtn";
 import { AuthorInfo, DepartmentInfo } from "./types";
 
 const authors: AuthorInfo[] = [
@@ -45,9 +47,10 @@ const Organization = () => {
       <div>
         <Department departments={departments} />
       </div>
-      {/* <div>
+      <div>
         <PDFBtn placeholder="Paper" />
-      </div> */}
+        <CODEBtn placeholder="Code" />
+      </div>
     </div>
   );
 };
