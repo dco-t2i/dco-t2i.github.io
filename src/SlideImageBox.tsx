@@ -25,6 +25,7 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
+          loop={true}
         >
           {images.map(image => (
             <SwiperSlide key={image.url} className="text-center">
