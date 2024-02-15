@@ -14,7 +14,8 @@ import {
   subjectPersonalization,
   stylePersonalization,
   mySubjectMyStyle,
-  oneShotPersonalization
+  oneShotPersonalization,
+  acknowledgements
 } from "./const";
 import Organization from "./Organization";
 import AbstractBox from "./AbstractBox";
@@ -99,12 +100,14 @@ function App() {
           <Markdown text={oneShotPersonalization} />
         </TextBox>
         <SlideImageBox images={oneShotImages} backgroundColor={"white"} />
-        {/* <TextBox
-          title={"ICML 2024 Submission"}
+        <TextBox
+          title={"Acknowledgements"}
           backgroundColor={bgColor}
           textColor={"white"}
           last={true}
-        /> */}
+        >
+          <Markdown text={acknowledgements} />
+        </TextBox>
       </div>
     </WindowSizeContextProvider>
   );

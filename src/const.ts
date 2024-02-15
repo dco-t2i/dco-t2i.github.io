@@ -66,3 +66,5 @@ export const stylePersonalization = `DCO generates style-consistent images of va
 export const mySubjectMyStyle = `The high compositionality of DCO enables merging independently trained subject \n\nand style personalized models without any distraction.`;
 
 export const oneShotPersonalization = ` Our method enables subject consistent text-to-image generation with a single reference image.`;
+
+export const acknowledgements = `We thank David Salesin for their valuable feedback on our manuscript. Specifically, we express our gratitude to Nataniel Ruiz and Viraj Shah for their help on ZipLoRA implementation and feedback on the presentation of our paper. Finally, a special thanks to Jinyeop Kim and Younghyun Kim for their feedback and support on our manuscript and project page.`;
