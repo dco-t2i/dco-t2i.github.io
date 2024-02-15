@@ -8,7 +8,13 @@ const Author = ({ authors }: Props) => (
   <div className="py-1">
     {authors.map((author, index) => (
       <span className="relative p-4" key={index}>
-        <span className="text-2xl font-normal text-#555555">{author.name}</span>
+        <a
+          className="text-2xl font-normal text-#555555 no_underline"
+          href={author.page}
+          target="_blank"
+        >
+          {author.name}
+        </a>
         <span className="font-normal text-sm absolute top-2 right-2 tracking-tight text-#555555">
           {author.ref}
         </span>

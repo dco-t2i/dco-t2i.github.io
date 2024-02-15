@@ -5,19 +5,23 @@ import { AuthorInfo, DepartmentInfo } from "./types";
 const authors: AuthorInfo[] = [
   {
     name: "Kyungmin Lee",
-    ref: "1"
+    ref: "1",
+    page: "https://kyungmnlee.github.io/"
   },
   {
     name: "Sangkyung Kwak",
-    ref: "1"
+    ref: "1",
+    page: "https://alinlab.kaist.ac.kr/members.html"
   },
   {
     name: "Kihyuk Sohn",
-    ref: "2"
+    ref: "2",
+    page: "https://sites.google.com/site/kihyuksml"
   },
   {
     name: "Jinwoo Shin",
-    ref: "1"
+    ref: "1",
+    page: "https://alinlab.kaist.ac.kr/shin.html"
   }
 ];
 
