@@ -47,7 +47,7 @@ const Organization = () => {
       <div>
         <Department departments={departments} />
       </div>
-      <div>
+      <div className="flex justify-center items-center">
         <PDFBtn placeholder="Paper" />
         <CODEBtn placeholder="Code" />
       </div>

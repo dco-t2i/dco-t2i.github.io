@@ -80,6 +80,15 @@ function App() {
           <Markdown text={mySubjectMyStyle} />
         </TextBox>
         <SlideImageBox images={msmsImages} backgroundColor={"white"} />
+
+        {/* FIXME: MSMS*/}
+        <TextBox
+          title={"Custom Subject in Custom Style Generation"}
+          backgroundColor={bgColor}
+          textColor={"white"}
+        >
+          <Markdown text={mySubjectMyStyle} />
+        </TextBox>
         <SlideImageBox images={multiImages} backgroundColor={"white"} />
         {/* FIXME: One shot */}
         <TextBox

@@ -9,7 +9,7 @@ const Author = ({ authors }: Props) => (
     {authors.map((author, index) => (
       <span className="relative p-4" key={index}>
         <a
-          className="text-2xl font-normal text-#555555 no-underline hover-text-#0065a2"
+          className="text-2xl font-normal text-#0065a2 no-underline hover-text-#1D817E"
           href={author.page}
           target="_blank"
         >
