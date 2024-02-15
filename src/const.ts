@@ -72,12 +72,14 @@ export const abstract = `Text-to-image (T2I) diffusion models, when fine-tuned o
   We show the efficacy of proposed method on the T2I personalization for subject, style, or both.
   In particular, our method results in superior Pareto frontier to the baselines.`;
 
-export const subjectPersonalization = `DCO generates consistent images of a subject given by reference images, composed with textual prompts, *e.g.*, changing the outfits, backgrounds, attributes (top row) or converting into various styles (bottom row).`;
+export const subjectPersonalization = `DCO generates images with a high degree of subject consistency and text alignment. It is possible to change the outfits, backgrounds, or visual attributes of the subject (top row) or convert the subject into different styles (bottom row).`;
 
-export const stylePersonalization = `DCO generates style-consistent images of various contents, given a single reference image.`;
+export const stylePersonalization = `Given a single reference image, DCO successfully extracts the style of the image without interfering with the content of the reference image, and generates style-consistent images of different content.`;
 
-export const mySubjectMyStyle = `The high compositionality of DCO enables merging independently trained subject \n\nand style personalized models without any distraction.`;
+export const mySubjectMyStyle = `DCO's fine-tuned subject and style models can be easily merged (i.e., arithmetically merged) without any post-processing, producing subject and style-consistent images.`;
 
-export const oneShotPersonalization = ` Our method enables subject consistent text-to-image generation with a single reference image.`;
+export const multicomposition = `It is also possible to generate the image of a custom subject in a custom style with various visual attributes, backgrounds, or actions guided by text prompts.`;
+
+export const oneShotPersonalization = `Our method enables subject consistent text-to-image generation with a single reference image. Users can use synthetic images from different sources for the reference and generate subject consistent images with different attributes and styles.`;
 
 export const acknowledgements = `We thank David Salesin for their valuable feedback on our manuscript. Specifically, we express our gratitude to Nataniel Ruiz and Viraj Shah for their help on ZipLoRA implementation and feedback on the presentation of our paper. Finally, a special thanks to Jinyeop Kim and Younghyun Kim for their feedback and support on our manuscript and project page.`;

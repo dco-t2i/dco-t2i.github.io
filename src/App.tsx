@@ -15,7 +15,8 @@ import {
   stylePersonalization,
   mySubjectMyStyle,
   oneShotPersonalization,
-  acknowledgements
+  acknowledgements,
+  multicomposition
 } from "./const";
 import Organization from "./Organization";
 import AbstractBox from "./AbstractBox";
@@ -85,11 +86,13 @@ function App() {
           <SlideImageBox images={msmsImages} backgroundColor={"white"} />
           {/* FIXME: MSMS*/}
           <TextBox
-            title={"Custom Subject in Custom Style Generation"}
+            title={
+              "Text Composition with Custom Subject in Custom Style Generation"
+            }
             backgroundColor={bgColor}
             textColor={"white"}
           >
-            <Markdown text={mySubjectMyStyle} />
+            <Markdown text={multicomposition} />
           </TextBox>
           <SlideImageBox images={multiImages} backgroundColor={"white"} />
           {/* FIXME: One shot */}
