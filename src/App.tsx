@@ -110,7 +110,23 @@ function App() {
             textColor={"white"}
             last={true}
           >
-            <Markdown text={acknowledgements} />
+            <div>
+              This work is supported in part by Google University Relations
+              program and Google Cloud Platform credit grant. We express our
+              gratitude to Nataniel Ruiz and Viraj Shah for their help on
+              ZipLoRA implementation and Meera Hahn for their feedback on the
+              presentation of our paper. Finally, we thank Jinyeop Kim and
+              Younghyun Kim for their feedback and support on our manuscript and
+              project page. We provide{" "}
+              <a
+                href="https://www.google.com/"
+                className="text-#4cc9f0 no-underline font-italic"
+              >
+                custom link
+              </a>{" "}
+              to image assets used in our experiments.
+            </div>
+            {/* <Markdown text={acknowledgements} /> */}
           </TextBox>
         </div>
       </WindowSizeContextProvider>

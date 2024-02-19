@@ -27,8 +27,7 @@ export const styleImages = [
   { url: "/2_style/11.jpeg" },
   { url: "/2_style/12.jpeg" },
   { url: "/2_style/13.jpeg" },
-  { url: "/2_style/14.jpeg" },
-  { url: "/2_style/15.jpeg" }
+  { url: "/2_style/14.jpeg" }
 ];
 
 export const msmsImages = [
@@ -82,4 +81,4 @@ export const multicomposition = `It is also possible to generate the image of a 
 
 export const oneShotPersonalization = `Our method enables subject consistent text-to-image generation with a single reference image. Users can use synthetic images from different sources for the reference and generate subject consistent images with different attributes and styles.`;
 
-export const acknowledgements = `We thank David Salesin for their valuable feedback on our manuscript. Specifically, we express our gratitude to Nataniel Ruiz and Viraj Shah for their help on ZipLoRA implementation and feedback on the presentation of our paper. Finally, a special thanks to Jinyeop Kim and Younghyun Kim for their feedback and support on our manuscript and project page.`;
+export const acknowledgements = `This work is supported in part by Google University Relations program and Google Cloud Platform credit grant. We express our gratitude to Nataniel Ruiz and Viraj Shah for their help on ZipLoRA implementation and Meera Hahn for their feedback on the presentation of our paper. Finally, we thank Jinyeop Kim and Younghyun Kim for their feedback and support on our manuscript and project page. We provide <a href="https://www.google.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">custom link</a> to image assets used in our experiments.`;
