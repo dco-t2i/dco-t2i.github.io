@@ -15,7 +15,6 @@ import {
   stylePersonalization,
   mySubjectMyStyle,
   oneShotPersonalization,
-  acknowledgements,
   multicomposition
 } from "./const";
 import Organization from "./Organization";
@@ -119,7 +118,7 @@ function App() {
               Younghyun Kim for their feedback and support on our manuscript and
               project page. We provide{" "}
               <a
-                href="https://www.google.com/"
+                href="https://github.com/dco-t2i/dco-t2i.github.io/blob/main/assests/data.md"
                 className="text-#4cc9f0 no-underline font-italic"
               >
                 custom link
