@@ -9,7 +9,7 @@ Style images:
 <table>
 <thead>
   <tr>
-    <th><img src="https://images.unsplash.com/photo-1637819203905-2294a31391d3?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="Image", width="150", height="200"></th>
+    <th><img src="https://images.unsplash.com/photo-1637819203905-2294a31391d3?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" width="150" height="200"></th>
     <th><img src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=912&q=80" width="150" height="200"></th>
     <th><img src="https://img.freepik.com/free-psd/three-dimensional-real-estate-icon-mock-up_23-2149729145.jpg?w=996&t=st=1685117577~exp=1685118177~hmac=2d789df87b156c2e5578c8ddb69e4a3b3176206f81b774d9faea7492a4eafc0f" width="150" height="150"></th>
     <th><img src="https://images.unsplash.com/photo-1612760721786-a42eb89aba02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Image" width="150" height="200"></th>
