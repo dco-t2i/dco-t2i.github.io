@@ -76,7 +76,7 @@ function App() {
           <SlideImageBox images={styleImages} backgroundColor={"white"} />
           {/* FIXME: MSMS*/}
           <TextBox
-            title={"Custom Subject in Custom Style Generation"}
+            title={"My Subject in My style Generation"}
             backgroundColor={bgColor}
             textColor={"white"}
           >
@@ -85,9 +85,7 @@ function App() {
           <SlideImageBox images={msmsImages} backgroundColor={"white"} />
           {/* FIXME: MSMS*/}
           <TextBox
-            title={
-              "Text Composition with Custom Subject in Custom Style Generation"
-            }
+            title={"Compositional Generation of My Subject in My Style"}
             backgroundColor={bgColor}
             textColor={"white"}
           >
