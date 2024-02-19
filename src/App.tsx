@@ -119,7 +119,7 @@ function App() {
                 href="https://github.com/dco-t2i/dco-t2i.github.io/blob/main/assests/data.md"
                 className="text-#4cc9f0 no-underline font-italic"
               >
-                custom link
+                links
               </a>{" "}
               to image assets used in our experiments.
             </div>
