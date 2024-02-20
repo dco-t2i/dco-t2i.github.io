@@ -7,7 +7,7 @@ interface Props {
 
 const PDFBtn = ({ placeholder }: Props) => {
   const handleClickArxiv: MouseEventHandler<HTMLButtonElement> = () => {
-    // window.open("/pdf_file_name.pdf");
+    window.open("https://arxiv.org/abs/2402.12004", "_blank");
   };
 
   return (
