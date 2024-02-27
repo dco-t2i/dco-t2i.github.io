@@ -7,7 +7,7 @@ interface Props {
 
 const CODEBtn = ({ placeholder }: Props) => {
   const handleClickGithub: MouseEventHandler<HTMLButtonElement> = () => {
-    // window.open("", "_blank");
+    window.open("https://github.com/kyungmnlee/dco", "_blank");
   };
 
   return (
