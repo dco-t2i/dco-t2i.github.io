@@ -1,4 +1,5 @@
-export const bgColor = `#0065a2`;
+// export const bgColor = `#0065a2`;
+export const bgColor = `#d3d3d3`;
 
 export const subjectImages = [
   { url: "/1_subject/0.jpeg" },
@@ -61,15 +62,12 @@ export const oneShotImages = [
 
 export const tldr = `DCO enhances compositionality of personalized text-to-image models by preserving pretrained knowledge`;
 
-export const abstract = `Text-to-image (T2I) diffusion models, when fine-tuned on few personal images, are able to generate visuals with high degree of consistency. 
-  However, they still lacks in synthesizing images of different scenario or styles that are possible in the original pretrained models. 
-  To address this, we propose to fine-tune T2I model by maximizing consistency to reference images, while penalizing the deviation from the pretrained model.
-  We devise a novel training objective for T2I diffusion models that minimally fine-tunes the pretrained model to achieve consistency.
-  Our method, dubbed ***Direct Consistency Optimization***, is as simple as regular diffusion loss, while significantly enhances the compositionality of personalized T2I models.
-  Also, our approach induces a new sampling method that controls the tradeoff between image fidelity and prompt fidelity.
-  Lastly, we emphasize the necessity of using a comprehensive caption for reference images to further enhance the image-text alignment.
-  We show the efficacy of proposed method on the T2I personalization for subject, style, or both.
-  In particular, our method results in superior Pareto frontier to the baselines.`;
+export const abstract = `Text-to-image (T2I) diffusion models, when fine-tuned on a few personal images, can generate visuals with a high degree of consistency. 
+                          However, such fine-tuned models are not robust; they often fail to compose with concepts of pretrained model or other fine-tuned models. 
+                          To address this, we propose a novel fine-tuning objective, dubbed Direct Consistency Optimization, which controls the deviation between fine-tuning and pretrained models to retain the pretrained knowledge during fine-tuning.
+                          Through extensive experiments on subject and style customization, we demonstrate that our method positions itself on a superior Pareto frontier between subject (or style) consistency and image-text alignment over all previous baselines; it not only outperforms regular fine-tuning objective in image-text alignment, but also shows higher fidelity to the reference images than the method that fine-tunes with additional prior dataset.
+                          More importantly, the models fine-tuned with our method can be merged without interference, allowing us to generate custom subjects in a custom style by composing separately customized subject and style models.
+                          Notably, we show that our approach achieves better prompt fidelity and subject fidelity than those post-optimized for merging regular fine-tuned models.`;
 
 export const subjectPersonalization = `DCO generates images with a high degree of subject consistency and text alignment. It is possible to change the outfits, backgrounds, or visual attributes of the subject (top row) or convert the subject into different styles (bottom row).`;
 

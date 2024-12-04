@@ -7,12 +7,12 @@ interface Props {
 
 const PDFBtn = ({ placeholder }: Props) => {
   const handleClickArxiv: MouseEventHandler<HTMLButtonElement> = () => {
-    window.open("https://arxiv.org/abs/2402.12004", "_blank");
+    window.open("https://openreview.net/forum?id=VazkRbCGxt", "_blank");
   };
 
   return (
     <button
-      className="rounded-3xl flex items-center px-3 py-1 border border-solid border-gray-500 bg-gray-500 text-white mt-4 cursor-pointer mr-3"
+      className="rounded-3xl flex items-center px-3 py-1 border border-solid border-#0065a2 bg-#0065a2 text-white mt-4 cursor-pointer mr-3"
       onClick={handleClickArxiv}
     >
       <PDFSvg />

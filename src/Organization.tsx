@@ -13,7 +13,7 @@ const authors: AuthorInfo[] = [
   {
     name: "Sangkyung Kwak",
     ref: "1",
-    page: "https://alinlab.kaist.ac.kr/members.html"
+    page: "https://sang-kyung.github.io/"
   },
   {
     name: "Kihyuk Sohn",
@@ -33,7 +33,7 @@ const departments: DepartmentInfo[] = [
     ref: "1"
   },
   {
-    name: "Google Research",
+    name: "Meta Reality Labs",
     ref: "2"
   }
 ];

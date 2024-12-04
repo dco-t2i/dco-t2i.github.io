@@ -32,7 +32,7 @@ function App() {
               <>
                 Direct Consistency Optimization for
                 <br />
-                Compositional Text-to-Image Personalization
+                Robust Customization of Text-to-Image Personalization
               </>
             }
             backgroundColor={"white"}
@@ -45,7 +45,7 @@ function App() {
           <TextBox
             title={`TL;DR: ${tldr}`}
             backgroundColor={bgColor}
-            textColor={"white"}
+            textColor={"black"}
             titleFontSize={"text-3xl"}
           />
           {/* FIXME: Abstract */}
@@ -60,7 +60,7 @@ function App() {
           <TextBox
             title={"Subject Consistent Text-to-Image Generation"}
             backgroundColor={bgColor}
-            textColor={"white"}
+            textColor={"black"}
           >
             <Markdown text={subjectPersonalization} />
           </TextBox>
@@ -69,7 +69,7 @@ function App() {
           <TextBox
             title={"Style Consistent Text-to-Image Generation"}
             backgroundColor={bgColor}
-            textColor={"white"}
+            textColor={"black"}
           >
             <Markdown text={stylePersonalization} />
           </TextBox>
@@ -78,7 +78,7 @@ function App() {
           <TextBox
             title={"My Subject in My style Generation"}
             backgroundColor={bgColor}
-            textColor={"white"}
+            textColor={"black"}
           >
             <Markdown text={mySubjectMyStyle} />
           </TextBox>
@@ -87,7 +87,7 @@ function App() {
           <TextBox
             title={"Compositional Generation of My Subject in My Style"}
             backgroundColor={bgColor}
-            textColor={"white"}
+            textColor={"black"}
           >
             <Markdown text={multicomposition} />
           </TextBox>
@@ -96,7 +96,7 @@ function App() {
           <TextBox
             title={"One Shot Subject Personalization"}
             backgroundColor={bgColor}
-            textColor={"white"}
+            textColor={"black"}
           >
             <Markdown text={oneShotPersonalization} />
           </TextBox>
@@ -104,7 +104,7 @@ function App() {
           <TextBox
             title={"Acknowledgements"}
             backgroundColor={bgColor}
-            textColor={"white"}
+            textColor={"black"}
             last={true}
           >
             <div>
@@ -117,7 +117,7 @@ function App() {
               project page. We provide{" "}
               <a
                 href="https://github.com/dco-t2i/dco-t2i.github.io/blob/main/assests/data.md"
-                className="text-#4cc9f0 no-underline font-italic"
+                className="text-#0065a2 no-underline font-italic"
               >
                 links
               </a>{" "}
