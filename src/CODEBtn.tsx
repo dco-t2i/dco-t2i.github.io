@@ -12,7 +12,7 @@ const CODEBtn = ({ placeholder }: Props) => {
 
   return (
     <button
-      className="rounded-3xl flex items-center px-3 py-1 border border-solid border-0065a2 bg-#0065a2 text-white mt-4 cursor-pointer ml-3"
+      className="rounded-3xl flex items-center px-3 py-1 border border-solid border-#0065a2 bg-#0065a2 text-white mt-4 cursor-pointer ml-3"
       onClick={handleClickGithub}
     >
       <CODESvg />
