@@ -60,7 +60,7 @@ export const oneShotImages = [
   { url: "/5_1shot/3.jpeg" }
 ];
 
-export const tldr = `DCO enhances compositionality of personalized text-to-image models by preserving pretrained knowledge`;
+export const tldr = `We propose robust customization of T2I DMs by preserving pretrained knowledge, thereby enhances compositionality.`;
 
 export const abstract = `Text-to-image (T2I) diffusion models, when fine-tuned on a few personal images, can generate visuals with a high degree of consistency. 
                           However, such fine-tuned models are not robust; they often fail to compose with concepts of pretrained model or other fine-tuned models. 
